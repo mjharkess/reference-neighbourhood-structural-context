@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reference-Neighbourhood Structural Context Framework External Material Descriptor Record",
+  "description": "Machine-readable v0.1 contract for the recommended flattened external_descriptor_record.json hand-off from the external structure preparation workflow to the MaterialStore. This schema reflects the supplied frozen implementation. Null means unavailable/not generated, not zero or negative evidence.",
+  "type": "object",
+  "properties": {
+    "jid": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Resolved material identifier. For a prepared external material this normally equals external_id."
+    },
+    "external_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable identifier for the external material."
+    },
+    "formula": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Material formula."
+    },
+    "reduced_formula": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Reduced chemical formula."
+    },
+    "material_type": {
+      "const": "external",
+      "description": "Normalized material type."
+    },
+    "dataset_kind": {
+      "const": "external_structure",
+      "description": "Normalized dataset kind for externally supplied structures."
+    },
+    "is_external_material": {
+      "type": "boolean",
+      "const": true,
+      "description": "Marks the normalized record as external."
+    },
+    "external_registration_schema_version": {
+      "type": "string",
+      "const": "phase5.material_store_external.v1"
+    },
+    "external_source_file": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Original source structure path or filename; may be sanitized for published examples."
+    },
+    "external_source_format": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "cif",
+        "poscar",
+        "contcar",
+        null
+      ]
+    },
+    "chemical_system": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "n_elements": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "composition_family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metal_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "nonmetal_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "element_set": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "mean_electronegativity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "electronegativity_range": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "atomic_radius_mean": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "valence_electrons_mean": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "spacegroup_number": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "crystal_system_code": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 7
+    },
+    "n_symmetry_ops": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "is_centrosymmetric": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "coord_mean": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "coord_std": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "coord_min": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "coord_max": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "frac_low_coord_sites": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "frac_high_coord_sites": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "a_axis": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "b_axis": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "c_axis_cached": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "c_over_a": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "c_over_b": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "max_axis_over_min_axis": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "volume_per_atom": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "frac_z_span": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cart_z_span_over_c": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_mean_en_diff": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_std_en_diff": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_max_en_diff": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_length_mean": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_length_std": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "bond_length_range": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "frac_short_bonds": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "ionicity_proxy_comp": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "formation_energy": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Optional physical metadata; normally null for structure-only preparation."
+    },
+    "formation_energy_peratom": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Optional physical metadata; normally null for structure-only preparation."
+    },
+    "energy_above_hull": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Optional physical metadata; normally null for structure-only preparation."
+    },
+    "known_synthesized": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Optional physical metadata; normally null for structure-only preparation."
+    }
+  },
+  "required": [
+    "external_id",
+    "formula"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "external_id"
+      ]
+    },
+    {
+      "required": [
+        "jid"
+      ]
+    }
+  ],
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "material_type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "material_type": {
+            "const": "external"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "dataset_kind"
+        ]
+      },
+      "then": {
+        "properties": {
+          "dataset_kind": {
+            "const": "external_structure"
+          }
+        }
+      }
+    }
+  ],
+  "x-framework-notes": {
+    "recommended_public_handoff": "external_descriptor_record.json",
+    "source_formats": [
+      "cif",
+      "poscar",
+      "contcar"
+    ],
+    "preparation_validation_gate": "Proceed to the main retrieval pipeline when external_validation_report.json reports can_run_retrieval=true.",
+    "reference_universe_default": "External query records remain outside the reference universe unless explicitly included.",
+    "known_v0_1_alignment_issue": "The frozen MaterialStore required-column set includes n_elements, metal_count, and nonmetal_count, while the preparation module's copied LRT_REQUIRED_DESCRIPTOR_FIELDS list omits them. The normal descriptor builder generates these composition fields. This schema exposes them but does not make them JSON-Schema-required because registration normalization permits missing descriptor fields as null; scientific retrieval readiness is enforced separately by external_material_validator.py."
+  }
+}

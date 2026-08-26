@@ -1,0 +1,2 @@
+cluster_id,cluster_size,representative_candidate_id,mean_within_cluster_similarity,unique_reference_union_count,dominant_composition_family,dominant_formula_family,median_candidate_reliability,median_local_context_support,median_structural_regime_contrast,median_neighbourhood_coherence,median_structural_context_diversity
+1,10,JVASP-119589,1.0,1632,oxide,AB2C4D7,0.8844324,0.712636,0.835942,0.922833,0.453531

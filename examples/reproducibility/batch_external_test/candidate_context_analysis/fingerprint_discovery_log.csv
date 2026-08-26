@@ -1,0 +1,4 @@
+candidate_id,fingerprint_path,schema_version,status,query_formula,unique_reference_count
+EXT-JVASP-28634-TEST,<ORIGINAL_RUN_ROOT>/batch_external_test/EXT-JVASP-28634-TEST/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,compatible,MoW3(SeS3)2,1124
+EXT-JVASP-86726-TEST,<ORIGINAL_RUN_ROOT>/batch_external_test/EXT-JVASP-86726-TEST/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,compatible,LuNi4Sn,1069
+EXT-JVASP-98550-TEST,<ORIGINAL_RUN_ROOT>/batch_external_test/EXT-JVASP-98550-TEST/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,compatible,Ba4CeMn3O12,1527

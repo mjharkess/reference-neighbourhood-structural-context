@@ -1,0 +1,23 @@
+{
+  "can_run_retrieval": true,
+  "created_at_utc": "2026-08-09T14:12:59.129546+00:00",
+  "descriptor_completeness": 1.0,
+  "descriptor_status": "complete",
+  "errors": [],
+  "external_id": "EXT-JVASP-30-TEST",
+  "optional_fields_missing": [
+    "formation_energy",
+    "formation_energy_peratom",
+    "energy_above_hull",
+    "known_synthesized"
+  ],
+  "parse_status": "success",
+  "recommended_action": "Retrieval may proceed, but physical plausibility should be treated as incomplete.",
+  "required_descriptor_completeness": 1.0,
+  "required_fields_missing": [],
+  "schema_version": "phase5.external_validation.v1",
+  "validation_status": "accepted_with_warnings",
+  "warnings": [
+    "External physical plausibility fields are unavailable unless supplied separately"
+  ]
+}

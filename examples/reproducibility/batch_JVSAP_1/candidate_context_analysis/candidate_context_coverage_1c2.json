@@ -1,0 +1,211 @@
+{
+  "candidate_count": 10,
+  "candidate_exclusive_reference_counts": {
+    "JVASP-118994": 0,
+    "JVASP-119423": 0,
+    "JVASP-119589": 0,
+    "JVASP-122407": 0,
+    "JVASP-140218": 0,
+    "JVASP-142153": 0,
+    "JVASP-143116": 0,
+    "JVASP-143566": 0,
+    "JVASP-144808": 0,
+    "JVASP-145157": 0
+  },
+  "chemistry_context_correlations": {
+    "combined_context_similarity": {
+      "p_value": NaN,
+      "pair_count": 45,
+      "spearman_rho": NaN
+    },
+    "profile_similarity": {
+      "p_value": NaN,
+      "pair_count": 45,
+      "spearman_rho": NaN
+    },
+    "reference_neighbourhood_similarity": {
+      "p_value": NaN,
+      "pair_count": 45,
+      "spearman_rho": NaN
+    }
+  },
+  "cluster_count": 1,
+  "cluster_sizes": {
+    "1": 10
+  },
+  "effective_cluster_count": 1.0,
+  "mean_unique_references_per_candidate": 1632.0,
+  "median_unique_references_per_candidate": 1632.0,
+  "most_frequent_reference_ids": [
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-119357"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-42660"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-140428"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-142152"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-119595"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-141629"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-44783"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-12467"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-121891"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-30281"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-97780"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-12171"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-103536"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-48391"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-103777"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-120596"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-110727"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-98724"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-146337"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-143938"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-147431"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-145633"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-48276"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-11790"
+    },
+    {
+      "candidate_count": 10,
+      "candidate_fraction": 1.0,
+      "reference_id": "JVASP-147666"
+    }
+  ],
+  "pairwise_similarity_statistics": {
+    "chemistry_baseline_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "combined_context_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "profile_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "reference_distribution_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "reference_identity_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    },
+    "reference_neighbourhood_similarity": {
+      "count": 45,
+      "max": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0
+    }
+  },
+  "reference_union_count": 1632
+}

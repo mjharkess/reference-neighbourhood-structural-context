@@ -1,0 +1,4 @@
+candidate_id,formula,cluster_id,candidate_reliability,local_context_support,structural_regime_contrast,neighbourhood_coherence,structural_context_diversity,profile_chemical_system,profile_composition_family,profile_formula_family,profile_prototype_family
+EXT-JVASP-86726-TEST,LuNi4Sn,2,0.8060588,0.707455,0.839715,0.815667,0.567284,Lu-Ni-Sn,metallic_or_intermetallic,ABC4,unknown
+EXT-JVASP-28634-TEST,MoW3(SeS3)2,1,0.8303584,0.571818,0.827662,0.745834,0.63217,Mo-S-Se-W,mixed_metal_nonmetal,ABC3D3,unknown
+EXT-JVASP-98550-TEST,Ba4CeMn3O12,1,0.8865104,0.568909,0.840481,0.759333,0.624828,Ba-Ce-Mn-O,mixed_metal_nonmetal,AB3C4D12,unknown

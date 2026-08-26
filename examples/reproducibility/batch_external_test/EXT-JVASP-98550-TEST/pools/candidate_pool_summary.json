@@ -1,0 +1,115 @@
+{
+  "config": {
+    "adjacent_family_size": 500,
+    "adjacent_min_element_overlap": 1,
+    "boundary_contrast_size": 500,
+    "enable_family_classifier": true,
+    "max_per_chemical_system_adjacent": 25,
+    "max_per_chemical_system_boundary": 25,
+    "max_per_chemical_system_negative": 10,
+    "max_per_chemical_system_same_family": 50,
+    "max_per_chemical_system_wildcard": 10,
+    "negative_control_size": 100,
+    "negative_max_element_overlap": 0,
+    "same_family_size": 500,
+    "seed": 4881,
+    "stable_ehull_threshold": 0.1,
+    "wildcard_size": 100
+  },
+  "created_at_utc": "2026-08-09T14:17:43.821775+00:00",
+  "deterministic_seed": 4881,
+  "notes": [
+    "Phase 2 candidate pools only: no cheap evidence metrics, role-prior scoring, local-structure ranking, DFT, or property prediction has been run.",
+    "Negative-control pool is written separately and should not be mixed with candidate evidence pools.",
+    "Pool selection is deterministic for a fixed universe, query profile, configuration and seed.",
+    "Phase 2 v1.1 uses richer family labels when available: formula_family, prototype_family and structure_variant."
+  ],
+  "pool_counts": {
+    "adjacent_family": 414,
+    "boundary_contrast": 500,
+    "negative_control": 100,
+    "same_family": 500,
+    "wildcard": 100
+  },
+  "pool_files": {
+    "adjacent_family": "adjacent_family_pool.csv",
+    "boundary_contrast": "boundary_contrast_pool.csv",
+    "negative_control": "negative_control_pool.csv",
+    "same_family": "same_family_pool.csv",
+    "wildcard": "wildcard_pool.csv"
+  },
+  "pool_stats": {
+    "adjacent_family": {
+      "mean_selection_score": 2.149938500367772,
+      "missing_field_rows": 267,
+      "n_candidates": 414,
+      "stable_or_known_count": 336,
+      "unique_chemical_systems": 139,
+      "unique_composition_families": 2,
+      "unique_formula_families": 6,
+      "unique_prototype_families": 5,
+      "unique_structure_variants": 18
+    },
+    "boundary_contrast": {
+      "mean_selection_score": 5.3963,
+      "missing_field_rows": 394,
+      "n_candidates": 500,
+      "stable_or_known_count": 500,
+      "unique_chemical_systems": 265,
+      "unique_composition_families": 3,
+      "unique_formula_families": 132,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    },
+    "negative_control": {
+      "mean_selection_score": 7.75,
+      "missing_field_rows": 64,
+      "n_candidates": 100,
+      "stable_or_known_count": 100,
+      "unique_chemical_systems": 89,
+      "unique_composition_families": 3,
+      "unique_formula_families": 4,
+      "unique_prototype_families": 2,
+      "unique_structure_variants": 2
+    },
+    "same_family": {
+      "mean_selection_score": 7.6875,
+      "missing_field_rows": 373,
+      "n_candidates": 500,
+      "stable_or_known_count": 498,
+      "unique_chemical_systems": 349,
+      "unique_composition_families": 6,
+      "unique_formula_families": 82,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    },
+    "wildcard": {
+      "mean_selection_score": 2.755,
+      "missing_field_rows": 71,
+      "n_candidates": 100,
+      "stable_or_known_count": 100,
+      "unique_chemical_systems": 78,
+      "unique_composition_families": 3,
+      "unique_formula_families": 56,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    }
+  },
+  "query": {
+    "chemical_system": "Ba-Ce-Mn-O",
+    "composition_family": "mixed_metal_nonmetal",
+    "crystal_system_code": 5.0,
+    "family_confidence": 0.35,
+    "formula_family": "AB3C4D12",
+    "is_external_material": true,
+    "material_family": "mixed_metal_nonmetal",
+    "prototype_family": "unknown",
+    "query_formula": "Ba4CeMn3O12",
+    "query_jid": "EXT-JVASP-98550-TEST",
+    "spacegroup_number": 166.0,
+    "spacegroup_symbol": null,
+    "structure_variant": "unknown"
+  },
+  "query_profile_path": "<ORIGINAL_RUN_ROOT>/batch_external_test/EXT-JVASP-98550-TEST/profile/query_profile.json",
+  "schema_version": "phase2.candidate_pools.v1.1"
+}

@@ -1,0 +1,11 @@
+candidate_id,assigned_cluster_id,mean_similarity_to_assigned_cluster,best_alternative_cluster_id,mean_similarity_to_best_alternative_cluster,cluster_membership_margin,intercluster_candidate,transition_margin_threshold
+JVASP-119589,1,1.0,0,0.0,1.0,False,0.1
+JVASP-122407,1,1.0,0,0.0,1.0,False,0.1
+JVASP-143116,1,1.0,0,0.0,1.0,False,0.1
+JVASP-143566,1,1.0,0,0.0,1.0,False,0.1
+JVASP-145157,1,1.0,0,0.0,1.0,False,0.1
+JVASP-140218,1,1.0,0,0.0,1.0,False,0.1
+JVASP-119423,1,1.0,0,0.0,1.0,False,0.1
+JVASP-144808,1,1.0,0,0.0,1.0,False,0.1
+JVASP-142153,1,1.0,0,0.0,1.0,False,0.1
+JVASP-118994,1,1.0,0,0.0,1.0,False,0.1

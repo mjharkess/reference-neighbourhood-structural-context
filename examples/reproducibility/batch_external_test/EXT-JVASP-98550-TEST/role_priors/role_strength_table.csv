@@ -1,0 +1,3 @@
+rank,role,raw_prior_score,prior_score,confidence,strength_band,strength_rank,plausibility,supported,partial,unsupported,top_1,top_2,evidence_strength,supporting_evidence_count,contradiction_count,contradiction_penalty,canonical_boundary_score_penalty,is_core_role,is_quality_indicator,interpretation
+1,boundary,0.840481,0.840481,0.779135,strong,3,supported,True,False,False,True,True,0.846274,7,0,0.0,0.0,True,False,boundary is the #1 ranked core role with strong evidence.
+2,hub,0.568909,0.568909,0.638399,moderate,2,not_supported_due_to_weak_structural_context,False,True,False,False,True,0.675304,7,0,0.0,0.0,True,False,hub is the #2 ranked core role with moderate evidence.

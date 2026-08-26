@@ -1,0 +1,3 @@
+cluster_id,cluster_size,representative_candidate_id,mean_within_cluster_similarity,unique_reference_union_count,dominant_composition_family,dominant_formula_family,median_candidate_reliability,median_local_context_support,median_structural_regime_contrast,median_neighbourhood_coherence,median_structural_context_diversity
+1,2,EXT-JVASP-98550-TEST,0.5361400370960658,2606,mixed_metal_nonmetal,ABC3D3,0.8584344,0.5703635,0.8340715000000001,0.7525835000000001,0.628499
+2,1,EXT-JVASP-86726-TEST,1.0,1069,metallic_or_intermetallic,ABC4,0.8060588,0.707455,0.839715,0.815667,0.567284

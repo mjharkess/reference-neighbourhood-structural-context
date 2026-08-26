@@ -1,0 +1,4 @@
+rank,role,raw_prior_score,prior_score,confidence,strength_band,strength_rank,plausibility,supported,partial,unsupported,top_1,top_2,evidence_strength,supporting_evidence_count,contradiction_count,contradiction_penalty,canonical_boundary_score_penalty,is_core_role,is_quality_indicator
+1,boundary,0.835942,0.835942,0.727776,strong,3,supported,True,False,False,True,True,0.831165,7,0,0.0,0.0,True,False
+2,hub,0.747636,0.712636,0.644958,strong,3,supported,True,False,False,False,True,0.736308,7,1,0.035,0.0,True,False
+,outlier,0.009375,0.0,0.508062,very_weak,0,not_supported,False,False,True,False,False,,3,3,0.105,0.0,False,True

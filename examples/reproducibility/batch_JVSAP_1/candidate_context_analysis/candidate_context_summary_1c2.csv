@@ -1,0 +1,11 @@
+candidate_id,formula,cluster_id,candidate_reliability,local_context_support,structural_regime_contrast,neighbourhood_coherence,structural_context_diversity,profile_chemical_system,profile_composition_family,profile_formula_family,profile_prototype_family,contextual_distinctiveness_percentile,mean_distance_to_k_nearest,cluster_membership_margin,intercluster_candidate,context_coordinate_1,context_coordinate_2
+JVASP-119589,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-122407,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-143116,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-143566,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-145157,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-140218,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-119423,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-144808,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-142153,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0
+JVASP-118994,Li7Mn2Co3O12,1,0.8844324,0.712636,0.835942,0.922833,0.453531,Co-Li-Mn-O,oxide,AB2C4D7,unknown,0.55,0.0,1.0,False,0.0,0.0

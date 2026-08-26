@@ -1,0 +1,11 @@
+candidate_id,status,fingerprint_path,schema_version,unique_reference_count,available_pool_count,pool_count,fingerprint_completeness,query_formula
+JVASP-119589,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-119589/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-122407,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-122407/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-143116,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-143116/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-143566,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-143566/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-145157,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-145157/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-140218,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-140218/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-119423,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-119423/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-144808,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-142153,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-142153/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12
+JVASP-118994,compatible,<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-118994/evidence/reference_neighbourhood_fingerprint.json,phase3.reference_neighbourhood_fingerprint.v1,1632,5,5,1.0,Li7Mn2Co3O12

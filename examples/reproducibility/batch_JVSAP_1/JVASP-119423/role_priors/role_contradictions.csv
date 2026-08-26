@@ -1,0 +1,5 @@
+role,contradiction,value
+hub,"Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation.",225.0
+outlier,"Same-family pool is large, arguing against outlier status.",500.0
+outlier,"Adjacent-family pool is large, arguing against isolation.",500.0
+outlier,"Negative controls are cleanly separated, reducing outlier concern.",1.0

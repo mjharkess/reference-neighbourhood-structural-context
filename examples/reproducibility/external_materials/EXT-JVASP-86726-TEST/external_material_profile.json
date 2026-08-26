@@ -1,0 +1,217 @@
+{
+  "atom_count": 6,
+  "created_at_utc": "2026-08-09T14:11:38.818503+00:00",
+  "descriptor_status": "pending",
+  "elements": [
+    "Lu",
+    "Ni",
+    "Sn"
+  ],
+  "errors": [],
+  "external_id": "EXT-JVASP-30-TEST",
+  "formula": "LuNi4Sn",
+  "lattice": {
+    "a": 4.947305346848307,
+    "alpha": 59.99999555583127,
+    "b": 4.947304466549198,
+    "beta": 60.00000144187679,
+    "c": 4.947304128800708,
+    "gamma": 59.99999507520554,
+    "volume": 85.62309837825836
+  },
+  "parse_status": "success",
+  "parser": "pymatgen.Structure.from_file",
+  "provenance": {
+    "external_label": "JVASP-86726 external control",
+    "parsed_at_utc": "2026-08-09T14:11:39.515647+00:00",
+    "source_filename": "POSCAR_JVASP-86726",
+    "source_path": "<ORIGINAL_RUN_ROOT>/POSCAR_JVASP-86726",
+    "source_sha256": "4f9e17d0cbfd8255bc8ee2a957192ecbcb7eb1b2079b89d3b1e67dbc0faa1fd5"
+  },
+  "raw_structure": {
+    "@class": "Structure",
+    "@module": "pymatgen.core.structure",
+    "charge": 0.0,
+    "lattice": {
+      "a": 4.947305346848307,
+      "alpha": 59.99999555583127,
+      "b": 4.947304466549198,
+      "beta": 60.00000144187679,
+      "c": 4.947304128800708,
+      "gamma": 59.99999507520554,
+      "matrix": [
+        [
+          4.284492173131309,
+          1.636192e-10,
+          2.4736525652019936
+        ],
+        [
+          1.428164057864698,
+          4.039456881219389,
+          2.4736525652019936
+        ],
+        [
+          4.62785e-10,
+          3.272383e-10,
+          4.947304128800708
+        ]
+      ],
+      "pbc": [
+        true,
+        true,
+        true
+      ],
+      "volume": 85.62309837825836
+    },
+    "properties": {},
+    "sites": [
+      {
+        "abc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "label": "Lu",
+        "properties": {},
+        "species": [
+          {
+            "element": "Lu",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "abc": [
+          0.6248769596428021,
+          0.6248769596427668,
+          0.12536912107166331
+        ],
+        "label": "Ni",
+        "properties": {},
+        "species": [
+          {
+            "element": "Ni",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          3.5697072571672623,
+          2.5241635346876925,
+          3.7116961586139485
+        ]
+      },
+      {
+        "abc": [
+          0.6248769596427768,
+          0.1253691210716623,
+          0.6248769596427667
+        ],
+        "label": "Ni",
+        "properties": {},
+        "species": [
+          {
+            "element": "Ni",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          2.856328115729385,
+          0.5064231591120785,
+          4.947304504525107
+        ]
+      },
+      {
+        "abc": [
+          0.12536912107159173,
+          0.6248769596427769,
+          0.6248769596428019
+        ],
+        "label": "Ni",
+        "properties": {},
+        "species": [
+          {
+            "element": "Ni",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          1.4295698326223534,
+          2.524163534769462,
+          4.947304504525107
+        ]
+      },
+      {
+        "abc": [
+          0.6248769596428222,
+          0.6248769596427868,
+          0.6248769596427602
+        ],
+        "label": "Ni",
+        "properties": {},
+        "species": [
+          {
+            "element": "Ni",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          3.5697072573985413,
+          2.524163534851231,
+          6.182913350745153
+        ]
+      },
+      {
+        "abc": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "label": "Sn",
+        "properties": {},
+        "species": [
+          {
+            "element": "Sn",
+            "occu": 1
+          }
+        ],
+        "xyz": [
+          1.428164057864698,
+          1.0098642204275619,
+          2.473652314801174
+        ]
+      }
+    ]
+  },
+  "reduced_formula": "LuNi4Sn",
+  "schema_version": "phase5.external_material.v1",
+  "source_file": "<ORIGINAL_RUN_ROOT>/POSCAR_JVASP-86726",
+  "source_format": "poscar",
+  "species_count": 3,
+  "structure_summary": {
+    "atom_count": 6,
+    "elements": [
+      "Lu",
+      "Ni",
+      "Sn"
+    ],
+    "formula": "LuNi4Sn",
+    "lattice": {
+      "a": 4.947305346848307,
+      "alpha": 59.99999555583127,
+      "b": 4.947304466549198,
+      "beta": 60.00000144187679,
+      "c": 4.947304128800708,
+      "gamma": 59.99999507520554,
+      "volume": 85.62309837825836
+    },
+    "reduced_formula": "LuNi4Sn",
+    "species_count": 3
+  },
+  "validation_status": "pending",
+  "warnings": []
+}

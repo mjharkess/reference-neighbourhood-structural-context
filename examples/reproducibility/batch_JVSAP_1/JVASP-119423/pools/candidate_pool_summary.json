@@ -1,0 +1,115 @@
+{
+  "config": {
+    "adjacent_family_size": 500,
+    "adjacent_min_element_overlap": 1,
+    "boundary_contrast_size": 500,
+    "enable_family_classifier": true,
+    "max_per_chemical_system_adjacent": 25,
+    "max_per_chemical_system_boundary": 25,
+    "max_per_chemical_system_negative": 10,
+    "max_per_chemical_system_same_family": 50,
+    "max_per_chemical_system_wildcard": 10,
+    "negative_control_size": 100,
+    "negative_max_element_overlap": 0,
+    "same_family_size": 500,
+    "seed": 87,
+    "stable_ehull_threshold": 0.1,
+    "wildcard_size": 100
+  },
+  "created_at_utc": "2026-08-09T13:44:18.341433+00:00",
+  "deterministic_seed": 87,
+  "notes": [
+    "Phase 2 candidate pools only: no cheap evidence metrics, role-prior scoring, local-structure ranking, DFT, or property prediction has been run.",
+    "Negative-control pool is written separately and should not be mixed with candidate evidence pools.",
+    "Pool selection is deterministic for a fixed universe, query profile, configuration and seed.",
+    "Phase 2 v1.1 uses richer family labels when available: formula_family, prototype_family and structure_variant."
+  ],
+  "pool_counts": {
+    "adjacent_family": 500,
+    "boundary_contrast": 500,
+    "negative_control": 100,
+    "same_family": 500,
+    "wildcard": 100
+  },
+  "pool_files": {
+    "adjacent_family": "adjacent_family_pool.csv",
+    "boundary_contrast": "boundary_contrast_pool.csv",
+    "negative_control": "negative_control_pool.csv",
+    "same_family": "same_family_pool.csv",
+    "wildcard": "wildcard_pool.csv"
+  },
+  "pool_stats": {
+    "adjacent_family": {
+      "mean_selection_score": 3.8236715547188953,
+      "missing_field_rows": 305,
+      "n_candidates": 500,
+      "stable_or_known_count": 478,
+      "unique_chemical_systems": 225,
+      "unique_composition_families": 1,
+      "unique_formula_families": 7,
+      "unique_prototype_families": 5,
+      "unique_structure_variants": 17
+    },
+    "boundary_contrast": {
+      "mean_selection_score": 6.69215,
+      "missing_field_rows": 426,
+      "n_candidates": 500,
+      "stable_or_known_count": 498,
+      "unique_chemical_systems": 222,
+      "unique_composition_families": 1,
+      "unique_formula_families": 95,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    },
+    "negative_control": {
+      "mean_selection_score": 7.75,
+      "missing_field_rows": 59,
+      "n_candidates": 100,
+      "stable_or_known_count": 100,
+      "unique_chemical_systems": 85,
+      "unique_composition_families": 3,
+      "unique_formula_families": 4,
+      "unique_prototype_families": 2,
+      "unique_structure_variants": 2
+    },
+    "same_family": {
+      "mean_selection_score": 10.787,
+      "missing_field_rows": 484,
+      "n_candidates": 500,
+      "stable_or_known_count": 470,
+      "unique_chemical_systems": 165,
+      "unique_composition_families": 1,
+      "unique_formula_families": 104,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    },
+    "wildcard": {
+      "mean_selection_score": 2.8875,
+      "missing_field_rows": 98,
+      "n_candidates": 100,
+      "stable_or_known_count": 100,
+      "unique_chemical_systems": 35,
+      "unique_composition_families": 1,
+      "unique_formula_families": 43,
+      "unique_prototype_families": 1,
+      "unique_structure_variants": 1
+    }
+  },
+  "query": {
+    "chemical_system": "Co-Li-Mn-O",
+    "composition_family": "oxide",
+    "crystal_system_code": 2.0,
+    "family_confidence": 0.35,
+    "formula_family": "AB2C4D7",
+    "is_external_material": false,
+    "material_family": "oxide",
+    "prototype_family": "unknown",
+    "query_formula": "Li7Mn2Co3O12",
+    "query_jid": "JVASP-119423",
+    "spacegroup_number": 8.0,
+    "spacegroup_symbol": "Cm",
+    "structure_variant": "unknown"
+  },
+  "query_profile_path": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-119423/profile/query_profile.json",
+  "schema_version": "phase2.candidate_pools.v1.1"
+}

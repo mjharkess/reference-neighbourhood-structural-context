@@ -1,0 +1,4 @@
+candidate_id,assigned_cluster_id,mean_similarity_to_assigned_cluster,best_alternative_cluster_id,mean_similarity_to_best_alternative_cluster,cluster_membership_margin,intercluster_candidate,transition_margin_threshold
+EXT-JVASP-98550-TEST,1,0.5361400370960658,2,0.5133196848744422,0.022820352221623597,True,0.1
+EXT-JVASP-28634-TEST,1,0.5361400370960658,2,0.4968702446278297,0.03926979246823614,True,0.1
+EXT-JVASP-86726-TEST,2,1.0,1,0.505094964751136,0.494905035248864,False,0.1

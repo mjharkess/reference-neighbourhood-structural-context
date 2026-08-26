@@ -1,0 +1,2 @@
+evidence_sufficiency_score,evidence_sufficiency_status,retrieval_completeness,pool_independence,pool_overlap_rate,context_ambiguity,profile_confidence,profile_confidence_band,quality_flags
+0.695524,sufficient,0.7515,0.874649,0.125351,0.47096,0.708621,high,generic_overclaim_risk;pool_overlap

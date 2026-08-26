@@ -1,0 +1,2006 @@
+{
+  "schema_version": "phase4_5.structural_context_inference.v4.0_transition",
+  "created_at_utc": "2026-08-09T13:42:35.992782+00:00",
+  "query": {
+    "jid": "JVASP-143566",
+    "formula": "Li7Mn2Co3O12",
+    "chemical_system": "Co-Li-Mn-O",
+    "composition_family": "oxide",
+    "formula_family": "AB2C4D7",
+    "prototype_family": "unknown",
+    "structure_variant": "unknown",
+    "family_classification_confidence": 0.35,
+    "spacegroup_number": 8.0,
+    "spacegroup_symbol": "Cm"
+  },
+  "configuration": {
+    "strong_threshold": 0.7,
+    "partial_threshold": 0.45,
+    "confidence_high_threshold": 0.7,
+    "confidence_partial_threshold": 0.45,
+    "no_strong_role_margin": 0.08,
+    "very_strong_strength_threshold": 0.85,
+    "strong_strength_threshold": 0.7,
+    "moderate_strength_threshold": 0.55,
+    "weak_strength_threshold": 0.35,
+    "ambiguous_role_margin": 0.08,
+    "possible_outlier_threshold": 0.45,
+    "warning_missing_rate_threshold": 0.25,
+    "warning_pool_overlap_threshold": 0,
+    "evidence_sufficiency_threshold": 0.55,
+    "minimum_anchor_strength": 0.35,
+    "minimum_family_specificity": 0.25,
+    "minimum_structural_specificity": 0.4,
+    "minimum_specific_anchor_for_strong_role": 0.4,
+    "role_separation_threshold": 0.08,
+    "contradiction_penalty_weight": 0.035,
+    "contradiction_penalty_cap": 0.25,
+    "high_core_score_override_threshold": 0.7,
+    "high_core_confidence_override_threshold": 0.6,
+    "canonical_hub_bonus_weight": 0.1,
+    "canonical_boundary_score_penalty": 0.16,
+    "canonical_boundary_penalty_min_hub_context": 0.8,
+    "profile_confidence_evidence_weight": 0.3,
+    "profile_confidence_retrieval_weight": 0.2,
+    "profile_confidence_pool_independence_weight": 0.15,
+    "profile_confidence_ambiguity_weight": 0.15,
+    "profile_confidence_measurement_weight": 0.2,
+    "profile_confidence_low_threshold": 0.35,
+    "profile_confidence_high_threshold": 0.7,
+    "hub_weights": {
+      "same_family_pool_size": 0.15,
+      "same_composition_match": 0.1,
+      "same_material_match": 0.1,
+      "same_formula_match": 0.2,
+      "same_prototype_match": 0.2,
+      "same_family_stable_fraction": 0.1,
+      "same_family_known_synthesized": 0.05,
+      "negative_control_separation": 0.1,
+      "canonical_prototype_bonus": 0.1
+    },
+    "bridge_weights": {
+      "adjacent_pool_size": 0.12,
+      "adjacent_unique_systems": 0.18,
+      "adjacent_element_overlap": 0.18,
+      "adjacent_family_entropy": 0.12,
+      "adjacent_prototype_entropy": 0.15,
+      "adjacent_variant_entropy": 0.1,
+      "cross_pool_overlap": 0.05,
+      "negative_control_separation": 0.1
+    },
+    "boundary_weights": {
+      "boundary_pool_size": 0.1,
+      "same_formula_or_prototype_context": 0.2,
+      "different_spacegroup": 0.18,
+      "different_crystal_system": 0.12,
+      "different_structure_variant": 0.15,
+      "symmetry_distance": 0.12,
+      "symmetry_entropy": 0.05,
+      "boundary_stability": 0.08
+    },
+    "outlier_weights": {
+      "low_same_family_support": 0.25,
+      "low_adjacent_support": 0.2,
+      "negative_control_similarity": 0.2,
+      "low_family_match": 0.2,
+      "high_missingness": 0.15
+    }
+  },
+  "inputs": {
+    "phase1_schema_version": "phase1.material_profile.v1.2",
+    "phase3_schema_version": "phase3.structural_context_evidence.v2_pool_context_summary"
+  },
+  "role_records": {
+    "hub": {
+      "role": "hub",
+      "raw_prior_score": 0.747636,
+      "prior_score": 0.712636,
+      "contradiction_penalty": 0.035,
+      "canonical_boundary_score_penalty": 0.0,
+      "base_confidence": 0.978125,
+      "confidence": 0.644958,
+      "plausibility": "supported",
+      "components": {
+        "same_family_pool_size": 1.0,
+        "same_composition_match": 1.0,
+        "same_material_match": 1.0,
+        "same_formula_match": 0.15,
+        "same_prototype_match": 1.0,
+        "same_family_stable_fraction": 0.924,
+        "same_family_known_synthesized": 1.0,
+        "negative_control_separation": 1.0,
+        "canonical_prototype_bonus": 0.0
+      },
+      "supporting_evidence": [
+        {
+          "text": "Same-family pool is populated.",
+          "value": 500.0
+        },
+        {
+          "text": "Same-family composition-family match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Same-family formula-family match rate.",
+          "value": 0.15
+        },
+        {
+          "text": "Same-family prototype-family match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Same-family structure-variant match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Same-family stable fraction.",
+          "value": 0.924
+        },
+        {
+          "text": "Negative control separation is strong.",
+          "value": 1.0
+        }
+      ],
+      "contradictions": [
+        {
+          "text": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation.",
+          "value": 225.0
+        }
+      ],
+      "rank": 2,
+      "top_1": false,
+      "top_2": true,
+      "strength_band": "strong",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 1,
+      "evidence_strength": 0.736308,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    "boundary": {
+      "role": "boundary",
+      "raw_prior_score": 0.835942,
+      "prior_score": 0.835942,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "base_confidence": 0.978125,
+      "confidence": 0.727776,
+      "plausibility": "supported",
+      "components": {
+        "boundary_pool_size": 1.0,
+        "same_formula_or_prototype_context": 1.0,
+        "different_spacegroup": 1.0,
+        "different_crystal_system": 1.0,
+        "different_structure_variant": 0.0,
+        "symmetry_distance": 1.0,
+        "symmetry_entropy": 0.763639,
+        "boundary_stability": 0.972
+      },
+      "supporting_evidence": [
+        {
+          "text": "Boundary/contrast pool is populated.",
+          "value": 500.0
+        },
+        {
+          "text": "Boundary pool retains formula/prototype context.",
+          "value": 1.0
+        },
+        {
+          "text": "Boundary pool structure-variant match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Boundary pool has low same-spacegroup rate.",
+          "value": 0.0
+        },
+        {
+          "text": "Boundary pool has low same-crystal-system rate.",
+          "value": 0.0
+        },
+        {
+          "text": "Mean symmetry distance is high.",
+          "value": 149.898
+        },
+        {
+          "text": "Boundary pool remains largely stable by hull threshold.",
+          "value": 0.972
+        }
+      ],
+      "contradictions": [],
+      "rank": 1,
+      "top_1": true,
+      "top_2": true,
+      "strength_band": "strong",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 0,
+      "evidence_strength": 0.831165,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    "bridge": {
+      "role": "bridge",
+      "raw_prior_score": 0.73051,
+      "prior_score": 0.73051,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "base_confidence": 0.978125,
+      "confidence": 0.662639,
+      "plausibility": "not_supported_due_to_weak_structural_context",
+      "components": {
+        "adjacent_pool_size": 1.0,
+        "adjacent_unique_systems": 1.0,
+        "adjacent_element_overlap": 0.4315,
+        "adjacent_family_entropy": 0.598457,
+        "adjacent_prototype_entropy": 0.707962,
+        "adjacent_variant_entropy": 0.748304,
+        "cross_pool_overlap": 0.0,
+        "negative_control_separation": 1.0,
+        "balanced_multi_pool_similarity_diagnostic": 0.319295,
+        "competing_membership_strength_diagnostic": 0.754488,
+        "structural_interpolation_score_diagnostic": 0.406674,
+        "coordination_transition_proxy_diagnostic": 0.561587,
+        "bridge_evidence_entropy_diagnostic": 0.974352
+      },
+      "supporting_evidence": [
+        {
+          "text": "Adjacent-family pool is populated.",
+          "value": 500.0
+        },
+        {
+          "text": "Adjacent-family pool spans many chemical systems.",
+          "value": 225.0
+        },
+        {
+          "text": "Adjacent-family element-overlap fraction is substantial.",
+          "value": 0.4315
+        },
+        {
+          "text": "Adjacent-family prototype entropy.",
+          "value": 0.707961729609728
+        },
+        {
+          "text": "Adjacent-family structure-variant entropy.",
+          "value": 0.7483043025576553
+        },
+        {
+          "text": "Cross-pool overlap suggests connection between candidate groups.",
+          "value": 0.0
+        },
+        {
+          "text": "Balanced multi-pool similarity diagnostic.",
+          "value": 0.3192952725535494
+        },
+        {
+          "text": "Competing neighbourhood membership diagnostic.",
+          "value": 0.7544882293131709
+        },
+        {
+          "text": "Structural interpolation diagnostic.",
+          "value": 0.40667417072101486
+        },
+        {
+          "text": "Coordination/structural transition diagnostic.",
+          "value": 0.5615870823781774
+        },
+        {
+          "text": "Bridge evidence entropy diagnostic.",
+          "value": 0.9743516675324438
+        }
+      ],
+      "contradictions": []
+    },
+    "outlier": {
+      "role": "outlier",
+      "raw_prior_score": 0.009375,
+      "prior_score": 0.0,
+      "contradiction_penalty": 0.105,
+      "canonical_boundary_score_penalty": 0.0,
+      "base_confidence": 0.978125,
+      "confidence": 0.508062,
+      "plausibility": "not_supported",
+      "components": {
+        "low_same_family_support": 0.0,
+        "low_adjacent_support": 0.0,
+        "negative_control_similarity": 0.0,
+        "low_family_match": 0.0,
+        "high_missingness": 0.0625
+      },
+      "supporting_evidence": [
+        {
+          "text": "Outlier score increases when same/adjacent support is weak.",
+          "value": 0.0
+        },
+        {
+          "text": "Negative-control similarity component.",
+          "value": 0.0
+        },
+        {
+          "text": "Missingness component.",
+          "value": 0.0625
+        }
+      ],
+      "contradictions": [
+        {
+          "text": "Same-family pool is large, arguing against outlier status.",
+          "value": 500.0
+        },
+        {
+          "text": "Adjacent-family pool is large, arguing against isolation.",
+          "value": 500.0
+        },
+        {
+          "text": "Negative controls are cleanly separated, reducing outlier concern.",
+          "value": 1.0
+        }
+      ],
+      "is_core_role": false,
+      "is_quality_indicator": true,
+      "strength_band": "very_weak"
+    }
+  },
+  "core_roles": [
+    "hub",
+    "boundary",
+    "other"
+  ],
+  "core_role_profile": {
+    "primary_role": "boundary",
+    "primary_role_strength": "strong",
+    "primary_role_score": 0.835942,
+    "primary_role_confidence": 0.727776,
+    "secondary_role": "hub",
+    "secondary_role_strength": "strong",
+    "secondary_role_score": 0.712636,
+    "role_margin": 0.123306,
+    "role_separation": 1.0,
+    "ambiguous_core_roles": false,
+    "classification_quality": "good"
+  },
+  "role_ranking": [
+    {
+      "rank": 1,
+      "role": "boundary",
+      "raw_prior_score": 0.835942,
+      "prior_score": 0.835942,
+      "confidence": 0.727776,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": true,
+      "top_2": true,
+      "evidence_strength": 0.831165,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 0,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    {
+      "rank": 2,
+      "role": "hub",
+      "raw_prior_score": 0.747636,
+      "prior_score": 0.712636,
+      "confidence": 0.644958,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": false,
+      "top_2": true,
+      "evidence_strength": 0.736308,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 1,
+      "contradiction_penalty": 0.035,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    }
+  ],
+  "core_role_ranking": [
+    {
+      "rank": 1,
+      "role": "boundary",
+      "raw_prior_score": 0.835942,
+      "prior_score": 0.835942,
+      "confidence": 0.727776,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": true,
+      "top_2": true,
+      "evidence_strength": 0.831165,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 0,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    {
+      "rank": 2,
+      "role": "hub",
+      "raw_prior_score": 0.747636,
+      "prior_score": 0.712636,
+      "confidence": 0.644958,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": false,
+      "top_2": true,
+      "evidence_strength": 0.736308,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 1,
+      "contradiction_penalty": 0.035,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    }
+  ],
+  "top_2_roles": [
+    "boundary",
+    "hub"
+  ],
+  "ranked_explanations": [
+    {
+      "rank": 1,
+      "role": "boundary",
+      "summary": "boundary ranked #1 among core roles with score 0.835942, confidence 0.727776, and strength `strong`.",
+      "strength_band": "strong",
+      "plausibility": "supported",
+      "evidence_strength": 0.831165,
+      "supporting_evidence": [
+        {
+          "text": "Boundary/contrast pool is populated.",
+          "value": 500.0
+        },
+        {
+          "text": "Boundary pool retains formula/prototype context.",
+          "value": 1.0
+        },
+        {
+          "text": "Boundary pool structure-variant match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Boundary pool has low same-spacegroup rate.",
+          "value": 0.0
+        },
+        {
+          "text": "Boundary pool has low same-crystal-system rate.",
+          "value": 0.0
+        }
+      ],
+      "contradictions": [],
+      "supporting_evidence_text": "Boundary/contrast pool is populated. | Boundary pool retains formula/prototype context. | Boundary pool structure-variant match rate. | Boundary pool has low same-spacegroup rate. | Boundary pool has low same-crystal-system rate.",
+      "contradiction_text": ""
+    },
+    {
+      "rank": 2,
+      "role": "hub",
+      "summary": "hub ranked #2 among core roles with score 0.712636, confidence 0.644958, and strength `strong`.",
+      "strength_band": "strong",
+      "plausibility": "supported",
+      "evidence_strength": 0.736308,
+      "supporting_evidence": [
+        {
+          "text": "Same-family pool is populated.",
+          "value": 500.0
+        },
+        {
+          "text": "Same-family composition-family match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Same-family formula-family match rate.",
+          "value": 0.15
+        },
+        {
+          "text": "Same-family prototype-family match rate.",
+          "value": 1.0
+        },
+        {
+          "text": "Same-family structure-variant match rate.",
+          "value": 1.0
+        }
+      ],
+      "contradictions": [
+        {
+          "text": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation.",
+          "value": 225.0
+        }
+      ],
+      "supporting_evidence_text": "Same-family pool is populated. | Same-family composition-family match rate. | Same-family formula-family match rate. | Same-family prototype-family match rate. | Same-family structure-variant match rate.",
+      "contradiction_text": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation."
+    }
+  ],
+  "role_strength_table": [
+    {
+      "rank": 1,
+      "role": "boundary",
+      "raw_prior_score": 0.835942,
+      "prior_score": 0.835942,
+      "confidence": 0.727776,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": true,
+      "top_2": true,
+      "evidence_strength": 0.831165,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 0,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false,
+      "interpretation": "boundary is the #1 ranked core role with strong evidence."
+    },
+    {
+      "rank": 2,
+      "role": "hub",
+      "raw_prior_score": 0.747636,
+      "prior_score": 0.712636,
+      "confidence": 0.644958,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": false,
+      "top_2": true,
+      "evidence_strength": 0.736308,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 1,
+      "contradiction_penalty": 0.035,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false,
+      "interpretation": "hub is the #2 ranked core role with strong evidence."
+    }
+  ],
+  "quality_flags": [
+    {
+      "flag": "generic_overclaim_risk",
+      "severity": "medium",
+      "reason": "Family/prototype/anchor evidence is generic; strong Hub/Boundary evidence is retained when present, but the claim should be reviewed.",
+      "value": 0.6425
+    },
+    {
+      "flag": "pool_overlap",
+      "severity": "low",
+      "reason": "Candidate IDs appear in multiple pools; evidence is not fully independent.",
+      "value": 68
+    }
+  ],
+  "quality_flag_names": [
+    "generic_overclaim_risk",
+    "pool_overlap"
+  ],
+  "quality_indicator_records": {
+    "outlier": {
+      "role": "outlier",
+      "raw_prior_score": 0.009375,
+      "prior_score": 0.0,
+      "contradiction_penalty": 0.105,
+      "canonical_boundary_score_penalty": 0.0,
+      "base_confidence": 0.978125,
+      "confidence": 0.508062,
+      "plausibility": "not_supported",
+      "components": {
+        "low_same_family_support": 0.0,
+        "low_adjacent_support": 0.0,
+        "negative_control_similarity": 0.0,
+        "low_family_match": 0.0,
+        "high_missingness": 0.0625
+      },
+      "supporting_evidence": [
+        {
+          "text": "Outlier score increases when same/adjacent support is weak.",
+          "value": 0.0
+        },
+        {
+          "text": "Negative-control similarity component.",
+          "value": 0.0
+        },
+        {
+          "text": "Missingness component.",
+          "value": 0.0625
+        }
+      ],
+      "contradictions": [
+        {
+          "text": "Same-family pool is large, arguing against outlier status.",
+          "value": 500.0
+        },
+        {
+          "text": "Adjacent-family pool is large, arguing against isolation.",
+          "value": 500.0
+        },
+        {
+          "text": "Negative controls are cleanly separated, reducing outlier concern.",
+          "value": 1.0
+        }
+      ],
+      "is_core_role": false,
+      "is_quality_indicator": true,
+      "strength_band": "very_weak"
+    }
+  },
+  "role_plausibility_table": [
+    {
+      "rank": 1,
+      "role": "boundary",
+      "raw_prior_score": 0.835942,
+      "prior_score": 0.835942,
+      "confidence": 0.727776,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": true,
+      "top_2": true,
+      "evidence_strength": 0.831165,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 0,
+      "contradiction_penalty": 0.0,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    {
+      "rank": 2,
+      "role": "hub",
+      "raw_prior_score": 0.747636,
+      "prior_score": 0.712636,
+      "confidence": 0.644958,
+      "strength_band": "strong",
+      "strength_rank": 3,
+      "plausibility": "supported",
+      "supported": true,
+      "partial": false,
+      "unsupported": false,
+      "top_1": false,
+      "top_2": true,
+      "evidence_strength": 0.736308,
+      "supporting_evidence_count": 7,
+      "contradiction_count": 1,
+      "contradiction_penalty": 0.035,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": true,
+      "is_quality_indicator": false
+    },
+    {
+      "rank": null,
+      "role": "outlier",
+      "raw_prior_score": 0.009375,
+      "prior_score": 0.0,
+      "confidence": 0.508062,
+      "strength_band": "very_weak",
+      "strength_rank": 0,
+      "plausibility": "not_supported",
+      "supported": false,
+      "partial": false,
+      "unsupported": true,
+      "top_1": false,
+      "top_2": false,
+      "evidence_strength": null,
+      "supporting_evidence_count": 3,
+      "contradiction_count": 3,
+      "contradiction_penalty": 0.105,
+      "canonical_boundary_score_penalty": 0.0,
+      "is_core_role": false,
+      "is_quality_indicator": true
+    }
+  ],
+  "role_contradictions": [
+    {
+      "role": "hub",
+      "contradiction": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation.",
+      "value": 225.0
+    },
+    {
+      "role": "outlier",
+      "contradiction": "Same-family pool is large, arguing against outlier status.",
+      "value": 500.0
+    },
+    {
+      "role": "outlier",
+      "contradiction": "Adjacent-family pool is large, arguing against isolation.",
+      "value": 500.0
+    },
+    {
+      "role": "outlier",
+      "contradiction": "Negative controls are cleanly separated, reducing outlier concern.",
+      "value": 1.0
+    }
+  ],
+  "evidence_sufficiency": {
+    "score": 0.699094,
+    "status": "sufficient",
+    "threshold": 0.55,
+    "anchor_strength": 0.6425,
+    "family_specificity": 0.35,
+    "structural_specificity": 0.0,
+    "negative_control_separation": 1.0,
+    "role_gap": 0.123306,
+    "role_separation": 1.0,
+    "evidence_quality": 0.978125,
+    "missing_quality": 0.9375,
+    "pool_independence": 0.96,
+    "generic_overclaim_risk": true,
+    "canonical_high_symmetry_hub_candidate": false,
+    "canonical_hub_context_strength": 1.0,
+    "reasons": [
+      "Anchor strength is adequate (0.643).",
+      "Family classification is specific enough (0.350).",
+      "Negative controls are well separated (1.000).",
+      "Top role is separated from second role by 0.123."
+    ],
+    "warnings": [
+      "Structural family/prototype context is weak (0.000); formula-only evidence is not enough for a strong role.",
+      "Generic or formula-only overclaim risk detected; preserving high-scoring Hub/Boundary evidence with caution flags."
+    ]
+  },
+  "secondary_descriptors": [],
+  "secondary_descriptor_names": [],
+  "case_diagnostic_summary": {
+    "jid": "JVASP-143566",
+    "external_id": null,
+    "formula": "Li7Mn2Co3O12",
+    "primary_role": "boundary",
+    "primary_role_strength": "strong",
+    "primary_role_score": 0.835942,
+    "primary_role_confidence": 0.727776,
+    "secondary_role": "hub",
+    "secondary_role_strength": "strong",
+    "hub_score": 0.712636,
+    "boundary_score": 0.835942,
+    "hub_confidence": 0.644958,
+    "boundary_confidence": 0.727776,
+    "hub_boundary_score_gap": -0.123306,
+    "absolute_hub_boundary_score_gap": 0.123306,
+    "hub_boundary_score_gap_band": "moderately_separated",
+    "hub_boundary_confidence_gap": -0.082818,
+    "absolute_hub_boundary_confidence_gap": 0.082818,
+    "hub_boundary_confidence_gap_band": "moderately_separated",
+    "hub_boundary_ambiguity_flag": false,
+    "diagnostic_winner_by_score": "boundary",
+    "diagnostic_winner_by_confidence": "boundary",
+    "hub_supporting_evidence_count": 7,
+    "boundary_supporting_evidence_count": 7,
+    "hub_contradiction_count": 1,
+    "boundary_contradiction_count": 0,
+    "hub_same_family_coherence_proxy": 0.845667,
+    "hub_prototype_dominance_proxy": 1.0,
+    "boundary_regime_separation_proxy": 0.752728,
+    "boundary_context_anchor_proxy": 0.986,
+    "hub_support_summary": "Same-family pool is populated. (value=500.0) | Same-family composition-family match rate. (value=1.0) | Same-family formula-family match rate. (value=0.15)",
+    "hub_rejection_summary": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation. (value=225.0)",
+    "boundary_support_summary": "Boundary/contrast pool is populated. (value=500.0) | Boundary pool retains formula/prototype context. (value=1.0) | Boundary pool structure-variant match rate. (value=1.0)",
+    "boundary_rejection_summary": "Not rejected; selected as primary role with strength=strong, plausibility=supported.",
+    "other_classification_reason": "Not classified as Other.",
+    "secondary_descriptors": "",
+    "secondary_descriptor_explanation": "No secondary descriptors assigned.",
+    "quality_flags": "generic_overclaim_risk;pool_overlap",
+    "classification_quality": "good",
+    "evidence_sufficiency_status": "sufficient",
+    "evidence_sufficiency_score": 0.699094,
+    "review_recommendation": "Boundary assignment appears robust under current Phase 1 diagnostics. Check whether the assignment depends on broad/generic family evidence."
+  },
+  "role_explanation_summary": {
+    "jid": "JVASP-143566",
+    "external_id": null,
+    "formula": "Li7Mn2Co3O12",
+    "primary_role": "boundary",
+    "primary_role_strength": "strong",
+    "classification_quality": "good",
+    "hub_support_summary": "Same-family pool is populated. (value=500.0) | Same-family composition-family match rate. (value=1.0) | Same-family formula-family match rate. (value=0.15)",
+    "hub_rejection_summary": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation. (value=225.0)",
+    "boundary_support_summary": "Boundary/contrast pool is populated. (value=500.0) | Boundary pool retains formula/prototype context. (value=1.0) | Boundary pool structure-variant match rate. (value=1.0)",
+    "boundary_rejection_summary": "Not rejected; selected as primary role with strength=strong, plausibility=supported.",
+    "hub_boundary_comparison_summary": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary.",
+    "other_classification_reason": "Not classified as Other.",
+    "secondary_descriptor_explanation": "No secondary descriptors assigned.",
+    "review_recommendation": "Boundary assignment appears robust under current Phase 1 diagnostics. Check whether the assignment depends on broad/generic family evidence."
+  },
+  "diagnostic_metrics": {
+    "hub_boundary_diagnostics": {
+      "hub_score": 0.712636,
+      "boundary_score": 0.835942,
+      "hub_confidence": 0.644958,
+      "boundary_confidence": 0.727776,
+      "hub_strength_band": "strong",
+      "boundary_strength_band": "strong",
+      "signed_hub_minus_boundary_score_gap": -0.123306,
+      "absolute_hub_boundary_score_gap": 0.123306,
+      "signed_hub_minus_boundary_confidence_gap": -0.082818,
+      "absolute_hub_boundary_confidence_gap": 0.082818,
+      "diagnostic_winner_by_score": "boundary",
+      "diagnostic_winner_by_confidence": "boundary",
+      "hub_supporting_evidence_count": 7,
+      "boundary_supporting_evidence_count": 7,
+      "supporting_evidence_count_gap_hub_minus_boundary": 0,
+      "hub_contradiction_count": 1,
+      "boundary_contradiction_count": 0,
+      "contradiction_count_gap_hub_minus_boundary": 1,
+      "hub_boundary_ambiguity_flag": false,
+      "hub_boundary_score_gap_threshold": 0.08,
+      "hub_same_family_coherence_proxy": 0.845667,
+      "hub_prototype_dominance_proxy": 1.0,
+      "boundary_regime_separation_proxy": 0.752728,
+      "boundary_context_anchor_proxy": 0.986,
+      "diagnostic_explanation": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary."
+    },
+    "bridge_evidence_profile": {
+      "balanced_multi_pool_similarity": 0.319295,
+      "competing_membership_strength": 0.754488,
+      "structural_interpolation_score": 0.406674,
+      "coordination_transition_proxy": 0.561587,
+      "bridge_evidence_entropy": 0.974352,
+      "bridge_diagnostic_strength": 0.603279,
+      "same_family_query_similarity_score": 0.80965,
+      "adjacent_family_query_similarity_score": 0.465917,
+      "boundary_contrast_query_similarity_score": 0.751575,
+      "wildcard_query_similarity_score": 0.813519
+    },
+    "flat": {
+      "hub_score": 0.712636,
+      "boundary_score": 0.835942,
+      "hub_confidence": 0.644958,
+      "boundary_confidence": 0.727776,
+      "hub_strength_band": "strong",
+      "boundary_strength_band": "strong",
+      "signed_hub_minus_boundary_score_gap": -0.123306,
+      "absolute_hub_boundary_score_gap": 0.123306,
+      "signed_hub_minus_boundary_confidence_gap": -0.082818,
+      "absolute_hub_boundary_confidence_gap": 0.082818,
+      "diagnostic_winner_by_score": "boundary",
+      "diagnostic_winner_by_confidence": "boundary",
+      "hub_supporting_evidence_count": 7,
+      "boundary_supporting_evidence_count": 7,
+      "supporting_evidence_count_gap_hub_minus_boundary": 0,
+      "hub_contradiction_count": 1,
+      "boundary_contradiction_count": 0,
+      "contradiction_count_gap_hub_minus_boundary": 1,
+      "hub_boundary_ambiguity_flag": false,
+      "hub_boundary_score_gap_threshold": 0.08,
+      "hub_same_family_coherence_proxy": 0.845667,
+      "hub_prototype_dominance_proxy": 1.0,
+      "boundary_regime_separation_proxy": 0.752728,
+      "boundary_context_anchor_proxy": 0.986,
+      "diagnostic_explanation": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary.",
+      "balanced_multi_pool_similarity": 0.319295,
+      "competing_membership_strength": 0.754488,
+      "structural_interpolation_score": 0.406674,
+      "coordination_transition_proxy": 0.561587,
+      "bridge_evidence_entropy": 0.974352,
+      "bridge_diagnostic_strength": 0.603279,
+      "same_family_query_similarity_score": 0.80965,
+      "adjacent_family_query_similarity_score": 0.465917,
+      "boundary_contrast_query_similarity_score": 0.751575,
+      "wildcard_query_similarity_score": 0.813519
+    }
+  },
+  "hub_boundary_diagnostics": {
+    "hub_score": 0.712636,
+    "boundary_score": 0.835942,
+    "hub_confidence": 0.644958,
+    "boundary_confidence": 0.727776,
+    "hub_strength_band": "strong",
+    "boundary_strength_band": "strong",
+    "signed_hub_minus_boundary_score_gap": -0.123306,
+    "absolute_hub_boundary_score_gap": 0.123306,
+    "signed_hub_minus_boundary_confidence_gap": -0.082818,
+    "absolute_hub_boundary_confidence_gap": 0.082818,
+    "diagnostic_winner_by_score": "boundary",
+    "diagnostic_winner_by_confidence": "boundary",
+    "hub_supporting_evidence_count": 7,
+    "boundary_supporting_evidence_count": 7,
+    "supporting_evidence_count_gap_hub_minus_boundary": 0,
+    "hub_contradiction_count": 1,
+    "boundary_contradiction_count": 0,
+    "contradiction_count_gap_hub_minus_boundary": 1,
+    "hub_boundary_ambiguity_flag": false,
+    "hub_boundary_score_gap_threshold": 0.08,
+    "hub_same_family_coherence_proxy": 0.845667,
+    "hub_prototype_dominance_proxy": 1.0,
+    "boundary_regime_separation_proxy": 0.752728,
+    "boundary_context_anchor_proxy": 0.986,
+    "diagnostic_explanation": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary."
+  },
+  "structural_context_profile": {
+    "schema_version": "phase1.structural_context_profile.v1",
+    "created_at_utc": "2026-08-09T13:42:35.992741+00:00",
+    "scope_note": "Legacy transition profile. This is a Phase 1 structural-context measurement report. It is not a property prediction, synthesis prediction, DFT replacement, or candidate-ranking recommendation.",
+    "query_material": {
+      "jid": "JVASP-143566",
+      "formula": "Li7Mn2Co3O12",
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "formula_family": "AB2C4D7",
+      "prototype_family": "unknown",
+      "structure_variant": "unknown",
+      "family_classification_confidence": 0.35,
+      "spacegroup_number": 8.0,
+      "spacegroup_symbol": "Cm"
+    },
+    "pool_context_summary": {
+      "context_evidence_summary": {
+        "adjacent_family_query_similarity_score": 0.46591722222222226,
+        "boundary_contrast_query_similarity_score": 0.751575,
+        "negative_control_query_similarity_score": 0.2425,
+        "negative_control_separation_proxy": 0.7575000000000001,
+        "overall_pool_overlap_count": 68,
+        "pool_overlap_rate_proxy": 0.041666666666666664,
+        "retrieval_completeness_proxy": 1.0,
+        "same_family_query_similarity_score": 0.80965,
+        "strongest_supporting_neighbourhood": "wildcard",
+        "strongest_supporting_neighbourhood_similarity": 0.8135194444444445,
+        "weakest_non_control_neighbourhood": "adjacent_family",
+        "wildcard_query_similarity_score": 0.8135194444444445
+      },
+      "created_at_utc": "2026-08-09T13:42:35.229881+00:00",
+      "neighbourhood_characterisation": {
+        "adjacent_family": {
+          "available": true,
+          "chemical_system_count": 225,
+          "chemistry_diversity_proxy": 0.19948577728192599,
+          "composition_family_count": 1,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "Ca-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "ABO3",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "perovskite_like",
+          "dominant_spacegroup_number": "12",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "perovskite_like_unknown_variant",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 215,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 7,
+          "formula_family_purity_proxy": 0.401542668154222,
+          "known_synthesized_missing_rate": 0.61,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.5265405938530701,
+          "pool_name": "adjacent_family",
+          "prototype_family_count": 5,
+          "prototype_purity_proxy": 0.29203827039027197,
+          "query_similarity_score": 0.46591722222222226,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.418,
+          "same_formula_family_rate": 0.0,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 0.0,
+          "same_spacegroup_rate": 0.026,
+          "same_structure_variant_rate": 0.0,
+          "size": 500,
+          "spacegroup_count": 55,
+          "spacegroup_purity_proxy": 0.19121273586255216,
+          "stable_fraction_ehull_le_0_1": 0.91,
+          "structural_diversity_proxy": 0.7718317062814282,
+          "structural_regime_diversity_score": 0.7718317062814282,
+          "structure_variant_count": 17,
+          "structure_variant_purity_proxy": 0.25169569744234466
+        },
+        "boundary_contrast": {
+          "available": true,
+          "chemical_system_count": 222,
+          "chemistry_diversity_proxy": 0.26553107737247245,
+          "composition_family_count": 1,
+          "crystal_system_count": 5,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "5",
+          "dominant_formula_family": "AB2C3D8",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "166",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 148,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 95,
+          "formula_family_purity_proxy": 0.20340676788258272,
+          "known_synthesized_missing_rate": 0.852,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.328856151196554,
+          "pool_name": "boundary_contrast",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.751575,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.0,
+          "same_formula_family_rate": 0.034,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.0,
+          "same_structure_variant_rate": 1.0,
+          "size": 500,
+          "spacegroup_count": 53,
+          "spacegroup_purity_proxy": 0.25823965495223955,
+          "stable_fraction_ehull_le_0_1": 0.972,
+          "structural_diversity_proxy": 0.3763499565646151,
+          "structural_regime_diversity_score": 0.3763499565646151,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        },
+        "negative_control": {
+          "available": true,
+          "chemical_system_count": 85,
+          "chemistry_diversity_proxy": 0.8159289713894534,
+          "composition_family_count": 3,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "S-Ta",
+          "dominant_composition_family": "chalcogenide",
+          "dominant_crystal_system_code": "5",
+          "dominant_formula_family": "AB2",
+          "dominant_material_family": "chalcogenide",
+          "dominant_prototype_family": "dichalcogenide_like",
+          "dominant_spacegroup_number": "164",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "layered_chalcogenide_candidate",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 14,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 4,
+          "formula_family_purity_proxy": 0.27635213601763087,
+          "known_synthesized_missing_rate": 0.5900000000000001,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 3,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.8753176913882265,
+          "pool_name": "negative_control",
+          "prototype_family_count": 2,
+          "prototype_purity_proxy": 0.023499531242175853,
+          "query_similarity_score": 0.2425,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 0.0,
+          "same_crystal_system_rate": 0.18,
+          "same_formula_family_rate": 0.0,
+          "same_material_family_rate": 0.0,
+          "same_prototype_family_rate": 0.0,
+          "same_spacegroup_rate": 0.0,
+          "same_structure_variant_rate": 0.0,
+          "size": 100,
+          "spacegroup_count": 33,
+          "spacegroup_purity_proxy": 0.16621307098441018,
+          "stable_fraction_ehull_le_0_1": 0.95,
+          "structural_diversity_proxy": 0.9198592313873062,
+          "structural_regime_diversity_score": 0.9198592313873062,
+          "structure_variant_count": 2,
+          "structure_variant_purity_proxy": 0.023499531242175853
+        },
+        "same_family": {
+          "available": true,
+          "chemical_system_count": 165,
+          "chemistry_diversity_proxy": 0.2665422000444115,
+          "composition_family_count": 1,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "AB2C4D7",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "8",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 154,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 104,
+          "formula_family_purity_proxy": 0.2003733998667656,
+          "known_synthesized_missing_rate": 0.968,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.28009470028565503,
+          "pool_name": "same_family",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.80965,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.666,
+          "same_formula_family_rate": 0.15,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.468,
+          "same_structure_variant_rate": 1.0,
+          "size": 500,
+          "spacegroup_count": 46,
+          "spacegroup_purity_proxy": 0.40791071359402287,
+          "stable_fraction_ehull_le_0_1": 0.924,
+          "structural_diversity_proxy": 0.29025907546658775,
+          "structural_regime_diversity_score": 0.29025907546658775,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        },
+        "wildcard": {
+          "available": true,
+          "chemical_system_count": 35,
+          "chemistry_diversity_proxy": 0.2948359540254489,
+          "composition_family_count": 1,
+          "crystal_system_count": 4,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "ABCD4",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "12",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 17,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 43,
+          "formula_family_purity_proxy": 0.11549213792365343,
+          "known_synthesized_missing_rate": 0.98,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.3548317905723987,
+          "pool_name": "wildcard",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.8135194444444445,
+          "retrieval_completeness_proxy": 0.2,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.53,
+          "same_formula_family_rate": 0.03,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.01,
+          "same_structure_variant_rate": 1.0,
+          "size": 100,
+          "spacegroup_count": 25,
+          "spacegroup_purity_proxy": 0.1630391493840595,
+          "stable_fraction_ehull_le_0_1": 1.0,
+          "structural_diversity_proxy": 0.3998286679826112,
+          "structural_regime_diversity_score": 0.3998286679826112,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        }
+      },
+      "retrieval_summary": {
+        "candidate_retrieval_strategy": "same-family, adjacent-family, boundary-contrast, wildcard, and negative-control pools",
+        "chemical_system": "Co-Li-Mn-O",
+        "composition_family": "oxide",
+        "dataset_kind": "dft_3d",
+        "external_id": null,
+        "formula": "Li7Mn2Co3O12",
+        "formula_family": "AB2C4D7",
+        "is_external_material": false,
+        "material_family": "oxide",
+        "material_type": "bulk",
+        "phase2_summary_available": true,
+        "prototype_family": "unknown",
+        "query_jid": "JVASP-143566",
+        "spacegroup_number": 8.0,
+        "spacegroup_symbol": "Cm",
+        "structure_variant": "unknown"
+      },
+      "schema_version": "phase3.pool_context_summary.v1",
+      "scope_note": "Descriptive summary of retrieved candidate pools. This is evidence for the Structural Context Profile; it does not assign Hub, Boundary, Other, or any final interpretation.",
+      "structural_neighbourhood": {
+        "adjacent_family_pool_size": 500,
+        "boundary_contrast_pool_size": 500,
+        "candidate_ids_in_multiple_pools": 68,
+        "negative_control_pool_size": 100,
+        "pairwise_candidate_overlap_counts": {
+          "adjacent_family__boundary_contrast": 0,
+          "adjacent_family__negative_control": 0,
+          "adjacent_family__wildcard": 0,
+          "boundary_contrast__negative_control": 0,
+          "boundary_contrast__wildcard": 0,
+          "same_family__adjacent_family": 0,
+          "same_family__boundary_contrast": 68,
+          "same_family__negative_control": 0,
+          "same_family__wildcard": 0,
+          "wildcard__negative_control": 0
+        },
+        "same_family_pool_size": 500,
+        "unique_candidate_count_across_all_pools": 1632,
+        "wildcard_pool_size": 100
+      }
+    },
+    "measurements": {
+      "hub_strength": 0.712636,
+      "hub_strength_band": "high",
+      "boundary_strength": 0.835942,
+      "boundary_strength_band": "high",
+      "evidence_sufficiency": {
+        "score": 0.699094,
+        "status": "sufficient",
+        "threshold": 0.55,
+        "anchor_strength": 0.6425,
+        "family_specificity": 0.35,
+        "structural_specificity": 0.0,
+        "negative_control_separation": 1.0,
+        "role_gap": 0.123306,
+        "role_separation": 1.0,
+        "evidence_quality": 0.978125,
+        "missing_quality": 0.9375,
+        "pool_independence": 0.96,
+        "generic_overclaim_risk": true,
+        "canonical_high_symmetry_hub_candidate": false,
+        "canonical_hub_context_strength": 1.0,
+        "reasons": [
+          "Anchor strength is adequate (0.643).",
+          "Family classification is specific enough (0.350).",
+          "Negative controls are well separated (1.000).",
+          "Top role is separated from second role by 0.123."
+        ],
+        "warnings": [
+          "Structural family/prototype context is weak (0.000); formula-only evidence is not enough for a strong role.",
+          "Generic or formula-only overclaim risk detected; preserving high-scoring Hub/Boundary evidence with caution flags."
+        ]
+      },
+      "evidence_sufficiency_score": 0.699094,
+      "evidence_sufficiency_status": "sufficient",
+      "neighbourhood_coherence": 0.922833,
+      "context_ambiguity": 0.506776,
+      "context_ambiguity_band": "low",
+      "structural_diversity": 0.453531,
+      "hub_boundary_score_gap": -0.123306,
+      "absolute_hub_boundary_score_gap": 0.123306,
+      "hub_confidence": 0.644958,
+      "boundary_confidence": 0.727776
+    },
+    "interpretation": {
+      "primary_interpretation": "boundary",
+      "primary_interpretation_strength": "strong",
+      "primary_interpretation_score": 0.835942,
+      "secondary_interpretation": "hub",
+      "secondary_descriptors": [],
+      "interpretation_rationale": {
+        "hub_support_summary": "Same-family pool is populated. (value=500.0) | Same-family composition-family match rate. (value=1.0) | Same-family formula-family match rate. (value=0.15)",
+        "hub_rejection_summary": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation. (value=225.0)",
+        "boundary_support_summary": "Boundary/contrast pool is populated. (value=500.0) | Boundary pool retains formula/prototype context. (value=1.0) | Boundary pool structure-variant match rate. (value=1.0)",
+        "boundary_rejection_summary": "Not rejected; selected as primary role with strength=strong, plausibility=supported.",
+        "hub_boundary_comparison_summary": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary.",
+        "secondary_descriptor_explanation": "No secondary descriptors assigned.",
+        "other_classification_reason": "Not classified as Other."
+      }
+    },
+    "diagnostics": {
+      "context_quality": {
+        "classification_quality": "good",
+        "primary_role_confidence": 0.727776,
+        "evidence_sufficiency_status": "sufficient",
+        "evidence_sufficiency_score": 0.699094
+      },
+      "quality_flags": [
+        "generic_overclaim_risk",
+        "pool_overlap"
+      ],
+      "quality_flag_details": [
+        {
+          "flag": "generic_overclaim_risk",
+          "severity": "medium",
+          "reason": "Family/prototype/anchor evidence is generic; strong Hub/Boundary evidence is retained when present, but the claim should be reviewed.",
+          "value": 0.6425
+        },
+        {
+          "flag": "pool_overlap",
+          "severity": "low",
+          "reason": "Candidate IDs appear in multiple pools; evidence is not fully independent.",
+          "value": 68
+        }
+      ],
+      "review_flags": {
+        "no_strong_role_supported": false,
+        "possible_outlier": false,
+        "ambiguous_core_roles": false,
+        "hub_boundary_ambiguity_flag": false
+      },
+      "acceptance_diagnostics": {
+        "phase1_status": "diagnostic_only_not_a_classification_gate",
+        "review_recommendation": "Boundary assignment appears robust under current Phase 1 diagnostics. Check whether the assignment depends on broad/generic family evidence."
+      },
+      "provenance": {
+        "schema_version": "phase4_5.structural_context_inference.v4.0_transition",
+        "created_at_utc": "2026-08-09T13:42:35.992734+00:00",
+        "phase1_schema_version": "phase1.material_profile.v1.2",
+        "phase3_schema_version": "phase3.structural_context_evidence.v2_pool_context_summary"
+      }
+    }
+  },
+  "structural_context_profile_v2": {
+    "schema_version": "phase1.structural_context_profile.v2",
+    "created_at_utc": "2026-08-09T13:42:35.992741+00:00",
+    "schema_status": "transition_release",
+    "scope_and_provenance": {
+      "scope_note": "A reference-relative description of how the candidate is represented within the selected structural corpus. It is not an intrinsic material property, physical-property prediction, synthesis prediction, novelty claim, DFT replacement, or candidate-ranking recommendation.",
+      "reference_corpus": "not_recorded",
+      "phase1_input_schema_version": "phase1.material_profile.v1.2",
+      "phase3_input_schema_version": "phase3.structural_context_evidence.v2_pool_context_summary",
+      "inference_engine_schema_version": "phase4_5.structural_context_inference.v4.0_transition",
+      "measurement_compatibility_note": "Local Context Support equals the frozen v1 hub_strength calculation; Structural Regime Contrast equals the frozen v1 boundary_strength calculation; Structural Context Diversity equals the frozen v1 structural_diversity calculation in this transition release."
+    },
+    "query_material": {
+      "jid": "JVASP-143566",
+      "formula": "Li7Mn2Co3O12",
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "formula_family": "AB2C4D7",
+      "prototype_family": "unknown",
+      "structure_variant": "unknown",
+      "family_classification_confidence": 0.35,
+      "spacegroup_number": 8.0,
+      "spacegroup_symbol": "Cm"
+    },
+    "pool_context_summary": {
+      "context_evidence_summary": {
+        "adjacent_family_query_similarity_score": 0.46591722222222226,
+        "boundary_contrast_query_similarity_score": 0.751575,
+        "negative_control_query_similarity_score": 0.2425,
+        "negative_control_separation_proxy": 0.7575000000000001,
+        "overall_pool_overlap_count": 68,
+        "pool_overlap_rate_proxy": 0.041666666666666664,
+        "retrieval_completeness_proxy": 1.0,
+        "same_family_query_similarity_score": 0.80965,
+        "strongest_supporting_neighbourhood": "wildcard",
+        "strongest_supporting_neighbourhood_similarity": 0.8135194444444445,
+        "weakest_non_control_neighbourhood": "adjacent_family",
+        "wildcard_query_similarity_score": 0.8135194444444445
+      },
+      "created_at_utc": "2026-08-09T13:42:35.229881+00:00",
+      "neighbourhood_characterisation": {
+        "adjacent_family": {
+          "available": true,
+          "chemical_system_count": 225,
+          "chemistry_diversity_proxy": 0.19948577728192599,
+          "composition_family_count": 1,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "Ca-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "ABO3",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "perovskite_like",
+          "dominant_spacegroup_number": "12",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "perovskite_like_unknown_variant",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 215,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 7,
+          "formula_family_purity_proxy": 0.401542668154222,
+          "known_synthesized_missing_rate": 0.61,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.5265405938530701,
+          "pool_name": "adjacent_family",
+          "prototype_family_count": 5,
+          "prototype_purity_proxy": 0.29203827039027197,
+          "query_similarity_score": 0.46591722222222226,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.418,
+          "same_formula_family_rate": 0.0,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 0.0,
+          "same_spacegroup_rate": 0.026,
+          "same_structure_variant_rate": 0.0,
+          "size": 500,
+          "spacegroup_count": 55,
+          "spacegroup_purity_proxy": 0.19121273586255216,
+          "stable_fraction_ehull_le_0_1": 0.91,
+          "structural_diversity_proxy": 0.7718317062814282,
+          "structural_regime_diversity_score": 0.7718317062814282,
+          "structure_variant_count": 17,
+          "structure_variant_purity_proxy": 0.25169569744234466
+        },
+        "boundary_contrast": {
+          "available": true,
+          "chemical_system_count": 222,
+          "chemistry_diversity_proxy": 0.26553107737247245,
+          "composition_family_count": 1,
+          "crystal_system_count": 5,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "5",
+          "dominant_formula_family": "AB2C3D8",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "166",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 148,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 95,
+          "formula_family_purity_proxy": 0.20340676788258272,
+          "known_synthesized_missing_rate": 0.852,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.328856151196554,
+          "pool_name": "boundary_contrast",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.751575,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.0,
+          "same_formula_family_rate": 0.034,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.0,
+          "same_structure_variant_rate": 1.0,
+          "size": 500,
+          "spacegroup_count": 53,
+          "spacegroup_purity_proxy": 0.25823965495223955,
+          "stable_fraction_ehull_le_0_1": 0.972,
+          "structural_diversity_proxy": 0.3763499565646151,
+          "structural_regime_diversity_score": 0.3763499565646151,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        },
+        "negative_control": {
+          "available": true,
+          "chemical_system_count": 85,
+          "chemistry_diversity_proxy": 0.8159289713894534,
+          "composition_family_count": 3,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "S-Ta",
+          "dominant_composition_family": "chalcogenide",
+          "dominant_crystal_system_code": "5",
+          "dominant_formula_family": "AB2",
+          "dominant_material_family": "chalcogenide",
+          "dominant_prototype_family": "dichalcogenide_like",
+          "dominant_spacegroup_number": "164",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "layered_chalcogenide_candidate",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 14,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 4,
+          "formula_family_purity_proxy": 0.27635213601763087,
+          "known_synthesized_missing_rate": 0.5900000000000001,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 3,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.8753176913882265,
+          "pool_name": "negative_control",
+          "prototype_family_count": 2,
+          "prototype_purity_proxy": 0.023499531242175853,
+          "query_similarity_score": 0.2425,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 0.0,
+          "same_crystal_system_rate": 0.18,
+          "same_formula_family_rate": 0.0,
+          "same_material_family_rate": 0.0,
+          "same_prototype_family_rate": 0.0,
+          "same_spacegroup_rate": 0.0,
+          "same_structure_variant_rate": 0.0,
+          "size": 100,
+          "spacegroup_count": 33,
+          "spacegroup_purity_proxy": 0.16621307098441018,
+          "stable_fraction_ehull_le_0_1": 0.95,
+          "structural_diversity_proxy": 0.9198592313873062,
+          "structural_regime_diversity_score": 0.9198592313873062,
+          "structure_variant_count": 2,
+          "structure_variant_purity_proxy": 0.023499531242175853
+        },
+        "same_family": {
+          "available": true,
+          "chemical_system_count": 165,
+          "chemistry_diversity_proxy": 0.2665422000444115,
+          "composition_family_count": 1,
+          "crystal_system_count": 7,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "AB2C4D7",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "8",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 154,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 104,
+          "formula_family_purity_proxy": 0.2003733998667656,
+          "known_synthesized_missing_rate": 0.968,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.28009470028565503,
+          "pool_name": "same_family",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.80965,
+          "retrieval_completeness_proxy": 1.0,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.666,
+          "same_formula_family_rate": 0.15,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.468,
+          "same_structure_variant_rate": 1.0,
+          "size": 500,
+          "spacegroup_count": 46,
+          "spacegroup_purity_proxy": 0.40791071359402287,
+          "stable_fraction_ehull_le_0_1": 0.924,
+          "structural_diversity_proxy": 0.29025907546658775,
+          "structural_regime_diversity_score": 0.29025907546658775,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        },
+        "wildcard": {
+          "available": true,
+          "chemical_system_count": 35,
+          "chemistry_diversity_proxy": 0.2948359540254489,
+          "composition_family_count": 1,
+          "crystal_system_count": 4,
+          "dominant_chemical_system": "Co-Li-Mn-O",
+          "dominant_composition_family": "oxide",
+          "dominant_crystal_system_code": "2",
+          "dominant_formula_family": "ABCD4",
+          "dominant_material_family": "oxide",
+          "dominant_prototype_family": "unknown",
+          "dominant_spacegroup_number": "12",
+          "dominant_spacegroup_symbol": null,
+          "dominant_structure_variant": "unknown",
+          "duplicate_candidate_count": 0,
+          "duplicate_formula_count": 17,
+          "energy_above_hull_missing_rate": 0.0,
+          "formula_family_count": 43,
+          "formula_family_purity_proxy": 0.11549213792365343,
+          "known_synthesized_missing_rate": 0.98,
+          "known_synthesized_rate": 1.0,
+          "material_family_count": 1,
+          "missing_required_columns": [],
+          "pool_diversity_score": 0.3548317905723987,
+          "pool_name": "wildcard",
+          "prototype_family_count": 1,
+          "prototype_purity_proxy": 1.0,
+          "query_similarity_score": 0.8135194444444445,
+          "retrieval_completeness_proxy": 0.2,
+          "same_composition_family_rate": 1.0,
+          "same_crystal_system_rate": 0.53,
+          "same_formula_family_rate": 0.03,
+          "same_material_family_rate": 1.0,
+          "same_prototype_family_rate": 1.0,
+          "same_spacegroup_rate": 0.01,
+          "same_structure_variant_rate": 1.0,
+          "size": 100,
+          "spacegroup_count": 25,
+          "spacegroup_purity_proxy": 0.1630391493840595,
+          "stable_fraction_ehull_le_0_1": 1.0,
+          "structural_diversity_proxy": 0.3998286679826112,
+          "structural_regime_diversity_score": 0.3998286679826112,
+          "structure_variant_count": 1,
+          "structure_variant_purity_proxy": 1.0
+        }
+      },
+      "retrieval_summary": {
+        "candidate_retrieval_strategy": "same-family, adjacent-family, boundary-contrast, wildcard, and negative-control pools",
+        "chemical_system": "Co-Li-Mn-O",
+        "composition_family": "oxide",
+        "dataset_kind": "dft_3d",
+        "external_id": null,
+        "formula": "Li7Mn2Co3O12",
+        "formula_family": "AB2C4D7",
+        "is_external_material": false,
+        "material_family": "oxide",
+        "material_type": "bulk",
+        "phase2_summary_available": true,
+        "prototype_family": "unknown",
+        "query_jid": "JVASP-143566",
+        "spacegroup_number": 8.0,
+        "spacegroup_symbol": "Cm",
+        "structure_variant": "unknown"
+      },
+      "schema_version": "phase3.pool_context_summary.v1",
+      "scope_note": "Descriptive summary of retrieved candidate pools. This is evidence for the Structural Context Profile; it does not assign Hub, Boundary, Other, or any final interpretation.",
+      "structural_neighbourhood": {
+        "adjacent_family_pool_size": 500,
+        "boundary_contrast_pool_size": 500,
+        "candidate_ids_in_multiple_pools": 68,
+        "negative_control_pool_size": 100,
+        "pairwise_candidate_overlap_counts": {
+          "adjacent_family__boundary_contrast": 0,
+          "adjacent_family__negative_control": 0,
+          "adjacent_family__wildcard": 0,
+          "boundary_contrast__negative_control": 0,
+          "boundary_contrast__wildcard": 0,
+          "same_family__adjacent_family": 0,
+          "same_family__boundary_contrast": 68,
+          "same_family__negative_control": 0,
+          "same_family__wildcard": 0,
+          "wildcard__negative_control": 0
+        },
+        "same_family_pool_size": 500,
+        "unique_candidate_count_across_all_pools": 1632,
+        "wildcard_pool_size": 100
+      }
+    },
+    "relational_measurements": {
+      "local_context_support": 0.712636,
+      "local_context_support_band": "high",
+      "local_context_support_confidence": 0.644958,
+      "structural_regime_contrast": 0.835942,
+      "structural_regime_contrast_band": "high",
+      "structural_regime_contrast_confidence": 0.727776,
+      "neighbourhood_coherence": 0.922833,
+      "structural_context_diversity": 0.453531,
+      "structural_context_diversity_status": "provisional_retained_v1_aggregation",
+      "structural_context_diversity_definition": "Transition metric retained unchanged from v1: mean of inverse same-family coherence and boundary-regime separation. Its aggregation must be documented and validated before being treated as a final scientific measurement."
+    },
+    "reliability_diagnostics": {
+      "evidence_sufficiency": {
+        "score": 0.699094,
+        "status": "sufficient",
+        "threshold": 0.55,
+        "anchor_strength": 0.6425,
+        "family_specificity": 0.35,
+        "structural_specificity": 0.0,
+        "negative_control_separation": 1.0,
+        "role_gap": 0.123306,
+        "role_separation": 1.0,
+        "evidence_quality": 0.978125,
+        "missing_quality": 0.9375,
+        "pool_independence": 0.96,
+        "generic_overclaim_risk": true,
+        "canonical_high_symmetry_hub_candidate": false,
+        "canonical_hub_context_strength": 1.0,
+        "reasons": [
+          "Anchor strength is adequate (0.643).",
+          "Family classification is specific enough (0.350).",
+          "Negative controls are well separated (1.000).",
+          "Top role is separated from second role by 0.123."
+        ],
+        "warnings": [
+          "Structural family/prototype context is weak (0.000); formula-only evidence is not enough for a strong role.",
+          "Generic or formula-only overclaim risk detected; preserving high-scoring Hub/Boundary evidence with caution flags."
+        ]
+      },
+      "retrieval_completeness": {
+        "score": 1.0,
+        "status": "very_high",
+        "source": "pool_context_summary.context_evidence_summary.retrieval_completeness_proxy"
+      },
+      "pool_independence": {
+        "score": 0.958333,
+        "pool_overlap_rate": 0.041667,
+        "candidate_ids_in_multiple_pools": 68,
+        "unique_candidate_count_across_all_pools": 1632,
+        "definition": "Inverse of the proportion of unique retrieved candidate IDs that occur in more than one pool. This is a pragmatic transition metric, not a final statistical independence test."
+      },
+      "context_ambiguity": {
+        "score": 0.506776,
+        "band": "low"
+      },
+      "profile_confidence": {
+        "score": 0.764735,
+        "band": "high",
+        "components": {
+          "evidence_sufficiency": 0.699094,
+          "retrieval_completeness": 1.0,
+          "pool_independence": 0.958333,
+          "ambiguity_complement": 0.493224,
+          "measurement_confidence_mean": 0.686367,
+          "local_context_support_confidence": 0.644958,
+          "structural_regime_contrast_confidence": 0.727776
+        },
+        "weights": {
+          "evidence_sufficiency": 0.3,
+          "retrieval_completeness": 0.2,
+          "pool_independence": 0.15,
+          "ambiguity_complement": 0.15,
+          "measurement_confidence_mean": 0.2
+        },
+        "formula": "weighted_mean(evidence_sufficiency, retrieval_completeness, pool_independence, 1-context_ambiguity, mean(local_context_support_confidence, structural_regime_contrast_confidence))",
+        "scope_note": "Confidence in the reliability of the reference-relative profile under the selected corpus and retrieval method; not confidence in physical behaviour or scientific value."
+      },
+      "family_classification_uncertainty": {
+        "status": "not_yet_formally_calculated",
+        "available_query_family_fields": {
+          "composition_family": "oxide",
+          "formula_family": "AB2C4D7",
+          "prototype_family": "unknown",
+          "structure_variant": "unknown"
+        }
+      },
+      "quality_flags": [
+        "generic_overclaim_risk",
+        "pool_overlap"
+      ],
+      "quality_flag_details": [
+        {
+          "flag": "generic_overclaim_risk",
+          "severity": "medium",
+          "reason": "Family/prototype/anchor evidence is generic; strong Hub/Boundary evidence is retained when present, but the claim should be reviewed.",
+          "value": 0.6425
+        },
+        {
+          "flag": "pool_overlap",
+          "severity": "low",
+          "reason": "Candidate IDs appear in multiple pools; evidence is not fully independent.",
+          "value": 68
+        }
+      ]
+    },
+    "interpretation": {
+      "contextual_pattern": {
+        "code": "well_supported_contrast_rich",
+        "label": "Well-supported, contrast-rich context",
+        "summary": "The candidate is strongly anchored in a coherent reference neighbourhood while related references also span distinct structural regimes.",
+        "hub_like_interpretation": true,
+        "boundary_like_interpretation": true,
+        "interpretation_rule_version": "joint_context_quadrants.v1",
+        "thresholds": {
+          "high": 0.7,
+          "moderate": 0.55,
+          "minimum_profile_confidence": 0.35
+        }
+      },
+      "readable_interpretations": {
+        "hub_like": {
+          "applies": true,
+          "definition": "High Local Context Support relative to the selected reference corpus."
+        },
+        "boundary_like": {
+          "applies": true,
+          "definition": "High Structural Regime Contrast among related retrieved reference materials."
+        }
+      },
+      "legacy_role_interpretation": {
+        "primary_interpretation": "boundary",
+        "primary_interpretation_strength": "strong",
+        "primary_interpretation_score": 0.835942,
+        "secondary_interpretation": "hub",
+        "secondary_descriptors": [],
+        "interpretation_rationale": {
+          "hub_support_summary": "Same-family pool is populated. (value=500.0) | Same-family composition-family match rate. (value=1.0) | Same-family formula-family match rate. (value=0.15)",
+          "hub_rejection_summary": "Adjacent-family pool contains many chemical systems, which weakens a simple single-family hub interpretation. (value=225.0)",
+          "boundary_support_summary": "Boundary/contrast pool is populated. (value=500.0) | Boundary pool retains formula/prototype context. (value=1.0) | Boundary pool structure-variant match rate. (value=1.0)",
+          "boundary_rejection_summary": "Not rejected; selected as primary role with strength=strong, plausibility=supported.",
+          "hub_boundary_comparison_summary": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary.",
+          "secondary_descriptor_explanation": "No secondary descriptors assigned.",
+          "other_classification_reason": "Not classified as Other."
+        }
+      },
+      "legacy_role_status": "deprecated_interpretive_compatibility_only"
+    },
+    "reproducibility": {
+      "configuration": {
+        "strong_threshold": 0.7,
+        "partial_threshold": 0.45,
+        "confidence_high_threshold": 0.7,
+        "confidence_partial_threshold": 0.45,
+        "no_strong_role_margin": 0.08,
+        "very_strong_strength_threshold": 0.85,
+        "strong_strength_threshold": 0.7,
+        "moderate_strength_threshold": 0.55,
+        "weak_strength_threshold": 0.35,
+        "ambiguous_role_margin": 0.08,
+        "possible_outlier_threshold": 0.45,
+        "warning_missing_rate_threshold": 0.25,
+        "warning_pool_overlap_threshold": 0,
+        "evidence_sufficiency_threshold": 0.55,
+        "minimum_anchor_strength": 0.35,
+        "minimum_family_specificity": 0.25,
+        "minimum_structural_specificity": 0.4,
+        "minimum_specific_anchor_for_strong_role": 0.4,
+        "role_separation_threshold": 0.08,
+        "contradiction_penalty_weight": 0.035,
+        "contradiction_penalty_cap": 0.25,
+        "high_core_score_override_threshold": 0.7,
+        "high_core_confidence_override_threshold": 0.6,
+        "canonical_hub_bonus_weight": 0.1,
+        "canonical_boundary_score_penalty": 0.16,
+        "canonical_boundary_penalty_min_hub_context": 0.8,
+        "profile_confidence_evidence_weight": 0.3,
+        "profile_confidence_retrieval_weight": 0.2,
+        "profile_confidence_pool_independence_weight": 0.15,
+        "profile_confidence_ambiguity_weight": 0.15,
+        "profile_confidence_measurement_weight": 0.2,
+        "profile_confidence_low_threshold": 0.35,
+        "profile_confidence_high_threshold": 0.7,
+        "hub_weights": {
+          "same_family_pool_size": 0.15,
+          "same_composition_match": 0.1,
+          "same_material_match": 0.1,
+          "same_formula_match": 0.2,
+          "same_prototype_match": 0.2,
+          "same_family_stable_fraction": 0.1,
+          "same_family_known_synthesized": 0.05,
+          "negative_control_separation": 0.1,
+          "canonical_prototype_bonus": 0.1
+        },
+        "bridge_weights": {
+          "adjacent_pool_size": 0.12,
+          "adjacent_unique_systems": 0.18,
+          "adjacent_element_overlap": 0.18,
+          "adjacent_family_entropy": 0.12,
+          "adjacent_prototype_entropy": 0.15,
+          "adjacent_variant_entropy": 0.1,
+          "cross_pool_overlap": 0.05,
+          "negative_control_separation": 0.1
+        },
+        "boundary_weights": {
+          "boundary_pool_size": 0.1,
+          "same_formula_or_prototype_context": 0.2,
+          "different_spacegroup": 0.18,
+          "different_crystal_system": 0.12,
+          "different_structure_variant": 0.15,
+          "symmetry_distance": 0.12,
+          "symmetry_entropy": 0.05,
+          "boundary_stability": 0.08
+        },
+        "outlier_weights": {
+          "low_same_family_support": 0.25,
+          "low_adjacent_support": 0.2,
+          "negative_control_similarity": 0.2,
+          "low_family_match": 0.2,
+          "high_missingness": 0.15
+        }
+      },
+      "legacy_profile_schema_version": "phase1.structural_context_profile.v1"
+    }
+  },
+  "bridge_evidence_profile": {
+    "balanced_multi_pool_similarity": 0.319295,
+    "competing_membership_strength": 0.754488,
+    "structural_interpolation_score": 0.406674,
+    "coordination_transition_proxy": 0.561587,
+    "bridge_evidence_entropy": 0.974352,
+    "bridge_diagnostic_strength": 0.603279
+  },
+  "final_assessment": {
+    "status": "primary_role_supported:boundary;strength:strong",
+    "primary_role": "boundary",
+    "primary_role_strength": "strong",
+    "primary_role_score": 0.835942,
+    "primary_role_confidence": 0.727776,
+    "secondary_role": "hub",
+    "secondary_role_strength": "strong",
+    "secondary_descriptors": [],
+    "secondary_descriptor_details": [],
+    "top_role_by_score": "boundary",
+    "secondary_role_by_score": "hub",
+    "top_2_roles": [
+      "boundary",
+      "hub"
+    ],
+    "supported_roles": [
+      "boundary",
+      "hub"
+    ],
+    "partial_roles": [],
+    "unsupported_roles": [],
+    "no_strong_role_supported": false,
+    "possible_outlier": false,
+    "quality_flags": [
+      "generic_overclaim_risk",
+      "pool_overlap"
+    ],
+    "classification_quality": "good",
+    "ambiguous_supported_roles": false,
+    "ambiguous_core_roles": false,
+    "hub_boundary_score_gap": -0.123306,
+    "hub_boundary_confidence_gap": -0.082818,
+    "hub_boundary_diagnostic_winner_by_score": "boundary",
+    "hub_boundary_diagnostic_explanation": "Boundary has the higher adjusted score among the two primary roles. Same-family coherence is stronger than boundary regime-separation evidence. Hub has more contradiction flags than Boundary.",
+    "outlier_indicator_score": 0.0,
+    "outlier_indicator_strength": "very_weak",
+    "review_recommendation": "Boundary assignment appears robust under current Phase 1 diagnostics. Check whether the assignment depends on broad/generic family evidence.",
+    "other_classification_reason": "Not classified as Other.",
+    "secondary_descriptor_explanation": "No secondary descriptors assigned."
+  },
+  "warnings": [
+    "68 candidate IDs appear in multiple pools; role evidence is not fully independent.",
+    "Structural family/prototype context is weak (0.000); formula-only evidence is not enough for a strong role.",
+    "Generic or formula-only overclaim risk detected; preserving high-scoring Hub/Boundary evidence with caution flags."
+  ],
+  "source_evidence_summary": {
+    "role_signal_summary": {
+      "boundary_indicators": {
+        "boundary_crystal_system_entropy": 0.7636394812106999,
+        "boundary_mean_symmetry_distance": 149.898,
+        "boundary_pool_size": 500,
+        "boundary_same_crystal_system_rate": 0.0,
+        "boundary_same_formula_family_rate": 0.034,
+        "boundary_same_prototype_family_rate": 1.0,
+        "boundary_same_spacegroup_rate": 0.0,
+        "boundary_same_structure_variant_rate": 1.0,
+        "boundary_spacegroup_entropy": 0.7417603450477604
+      },
+      "bridge_indicators": {
+        "adjacent_family_entropy": 0.0,
+        "adjacent_formula_family_entropy": 0.598457331845778,
+        "adjacent_material_family_entropy": 0.0,
+        "adjacent_mean_element_overlap_fraction": 0.4315,
+        "adjacent_pool_size": 500,
+        "adjacent_prototype_family_entropy": 0.707961729609728,
+        "adjacent_query_similarity_score": 0.46591722222222226,
+        "adjacent_structural_regime_diversity_score": 0.7718317062814282,
+        "adjacent_structure_variant_entropy": 0.7483043025576553,
+        "adjacent_unique_chemical_systems": 225,
+        "boundary_query_similarity_score": 0.751575,
+        "boundary_structural_regime_diversity_score": 0.3763499565646151,
+        "overlap_same_adjacent": 0,
+        "same_family_query_similarity_score": 0.80965
+      },
+      "hub_indicators": {
+        "negative_control_same_family_rate": 0.0,
+        "same_family_composition_match_rate": 1.0,
+        "same_family_formula_match_rate": 0.15,
+        "same_family_known_synthesized_rate": 1.0,
+        "same_family_material_match_rate": 1.0,
+        "same_family_pool_size": 500,
+        "same_family_prototype_match_rate": 1.0,
+        "same_family_stable_fraction": 0.924,
+        "same_family_structure_variant_match_rate": 1.0
+      },
+      "interpretation_note": "These signals are descriptive evidence only. Final role-prior scoring belongs in Phase 4.",
+      "outlier_indicators": {
+        "adjacent_pool_size": 500,
+        "negative_control_element_overlap": 0.0,
+        "negative_control_same_chemical_system_rate": 0.0,
+        "negative_control_size": 100,
+        "same_family_pool_size": 500,
+        "wildcard_pool_size": 100
+      },
+      "status": "evidence_only_no_final_role_assignment",
+      "warnings": [
+        "68 candidate IDs appear in multiple pools; Phase 3 metrics remain valid, but pool evidence is not fully independent."
+      ]
+    },
+    "overlap_summary": {
+      "candidate_ids_in_multiple_pools": 68,
+      "pairwise_candidate_overlap_counts": {
+        "adjacent_family__boundary_contrast": 0,
+        "adjacent_family__negative_control": 0,
+        "adjacent_family__wildcard": 0,
+        "boundary_contrast__negative_control": 0,
+        "boundary_contrast__wildcard": 0,
+        "same_family__adjacent_family": 0,
+        "same_family__boundary_contrast": 68,
+        "same_family__negative_control": 0,
+        "same_family__wildcard": 0,
+        "wildcard__negative_control": 0
+      },
+      "unique_candidate_count_across_all_pools": 1632
+    }
+  }
+}

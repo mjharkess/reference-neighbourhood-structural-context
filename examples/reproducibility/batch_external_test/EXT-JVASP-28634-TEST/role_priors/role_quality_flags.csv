@@ -1,0 +1,3 @@
+flag,severity,reason,value
+generic_overclaim_risk,medium,"Family/prototype/anchor evidence is generic; strong Hub/Boundary evidence is retained when present, but the claim should be reviewed.",0.6425
+pool_overlap,medium,Candidate IDs appear in multiple pools; evidence is not fully independent.,117

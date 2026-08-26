@@ -1,0 +1,241 @@
+{
+  "created_at_utc": "2026-08-09T13:44:19.674528+00:00",
+  "expected_outputs": {
+    "candidate_pool_builder": [
+      "same_family_pool.csv",
+      "adjacent_family_pool.csv",
+      "boundary_contrast_pool.csv",
+      "wildcard_pool.csv",
+      "negative_control_pool.csv",
+      "candidate_pool_summary.json",
+      "pool_config_used.json"
+    ],
+    "cheap_evidence_metrics": [
+      "cheap_evidence_summary.json",
+      "cheap_evidence_metrics.csv",
+      "cheap_evidence_concepts.csv",
+      "pool_level_metrics.csv",
+      "pool_context_summary.json",
+      "pool_context_summary.csv",
+      "reference_neighbourhood_fingerprint.json",
+      "missing_value_report.csv",
+      "evidence_report.md"
+    ],
+    "material_profile_builder": [
+      "query_profile.json"
+    ],
+    "role_prior_engine_legacy": [
+      "role_prior_summary.json",
+      "role_plausibility_table.csv",
+      "role_contradictions.csv",
+      "structural_context_report.md",
+      "structural_context_summary.csv",
+      "structural_context_evidence_record.json",
+      "role_prior_config_used.json",
+      "role_ranking.csv",
+      "role_ranked_explanations.csv",
+      "structural_context_profile.json",
+      "structural_context_profile_v1.json"
+    ],
+    "role_prior_engine_v2": [
+      "structural_context_profile_v2.json",
+      "structural_context_profile_v2_measurements.csv",
+      "structural_context_profile_v2_reliability.csv",
+      "structural_context_profile_v2_interpretation.csv",
+      "structural_context_profile_v2_summary.csv",
+      "structural_context_report_v2.md"
+    ]
+  },
+  "finished_at_utc": "2026-08-09T13:44:54.389515+00:00",
+  "options": {
+    "continue_on_error": false,
+    "dry_run": false,
+    "force_rebuild_descriptor_cache": false,
+    "include_external_in_universe": false,
+    "legacy_outputs": true,
+    "material_store_config": null,
+    "non_strict_output_checks": false,
+    "output_checks_enabled": true,
+    "pool_sizes": {
+      "adjacent_family_size": null,
+      "boundary_contrast_size": null,
+      "negative_control_size": null,
+      "same_family_size": null,
+      "wildcard_size": null
+    },
+    "seed": 87,
+    "strict_output_checks": true
+  },
+  "output_checks": [
+    {
+      "checked_at_utc": "2026-08-09T13:44:35.053480+00:00",
+      "missing_files": [],
+      "output_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile",
+      "present_files": [
+        "query_profile.json"
+      ],
+      "required_files": [
+        "query_profile.json"
+      ],
+      "status": "complete",
+      "step": "material_profile_builder"
+    },
+    {
+      "checked_at_utc": "2026-08-09T13:44:53.373686+00:00",
+      "missing_files": [],
+      "output_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/pools",
+      "present_files": [
+        "same_family_pool.csv",
+        "adjacent_family_pool.csv",
+        "boundary_contrast_pool.csv",
+        "wildcard_pool.csv",
+        "negative_control_pool.csv",
+        "candidate_pool_summary.json",
+        "pool_config_used.json"
+      ],
+      "required_files": [
+        "same_family_pool.csv",
+        "adjacent_family_pool.csv",
+        "boundary_contrast_pool.csv",
+        "wildcard_pool.csv",
+        "negative_control_pool.csv",
+        "candidate_pool_summary.json",
+        "pool_config_used.json"
+      ],
+      "status": "complete",
+      "step": "candidate_pool_builder"
+    },
+    {
+      "checked_at_utc": "2026-08-09T13:44:54.171594+00:00",
+      "missing_files": [],
+      "output_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence",
+      "present_files": [
+        "cheap_evidence_summary.json",
+        "cheap_evidence_metrics.csv",
+        "cheap_evidence_concepts.csv",
+        "pool_level_metrics.csv",
+        "pool_context_summary.json",
+        "pool_context_summary.csv",
+        "reference_neighbourhood_fingerprint.json",
+        "missing_value_report.csv",
+        "evidence_report.md"
+      ],
+      "required_files": [
+        "cheap_evidence_summary.json",
+        "cheap_evidence_metrics.csv",
+        "cheap_evidence_concepts.csv",
+        "pool_level_metrics.csv",
+        "pool_context_summary.json",
+        "pool_context_summary.csv",
+        "reference_neighbourhood_fingerprint.json",
+        "missing_value_report.csv",
+        "evidence_report.md"
+      ],
+      "status": "complete",
+      "step": "cheap_evidence_metrics"
+    },
+    {
+      "checked_at_utc": "2026-08-09T13:44:54.389300+00:00",
+      "missing_files": [],
+      "output_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/role_priors",
+      "present_files": [
+        "structural_context_profile_v2.json",
+        "structural_context_profile_v2_measurements.csv",
+        "structural_context_profile_v2_reliability.csv",
+        "structural_context_profile_v2_interpretation.csv",
+        "structural_context_profile_v2_summary.csv",
+        "structural_context_report_v2.md",
+        "role_prior_summary.json",
+        "role_plausibility_table.csv",
+        "role_contradictions.csv",
+        "structural_context_report.md",
+        "structural_context_summary.csv",
+        "structural_context_evidence_record.json",
+        "role_prior_config_used.json",
+        "role_ranking.csv",
+        "role_ranked_explanations.csv",
+        "structural_context_profile.json",
+        "structural_context_profile_v1.json"
+      ],
+      "required_files": [
+        "structural_context_profile_v2.json",
+        "structural_context_profile_v2_measurements.csv",
+        "structural_context_profile_v2_reliability.csv",
+        "structural_context_profile_v2_interpretation.csv",
+        "structural_context_profile_v2_summary.csv",
+        "structural_context_report_v2.md",
+        "role_prior_summary.json",
+        "role_plausibility_table.csv",
+        "role_contradictions.csv",
+        "structural_context_report.md",
+        "structural_context_summary.csv",
+        "structural_context_evidence_record.json",
+        "role_prior_config_used.json",
+        "role_ranking.csv",
+        "role_ranked_explanations.csv",
+        "structural_context_profile.json",
+        "structural_context_profile_v1.json"
+      ],
+      "status": "complete",
+      "step": "role_prior_engine"
+    }
+  ],
+  "paths": {
+    "evidence_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence",
+    "output_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808",
+    "pools_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/pools",
+    "profile_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile",
+    "profile_json": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile/query_profile.json",
+    "reference_neighbourhood_fingerprint": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence/reference_neighbourhood_fingerprint.json",
+    "role_priors_dir": "<ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/role_priors",
+    "scripts": {
+      "candidate_pool_builder": "<ORIGINAL_RUN_ROOT>/candidate_pool_builder.py",
+      "cheap_evidence_metrics": "<ORIGINAL_RUN_ROOT>/cheap_evidence_metrics.py",
+      "material_profile_builder": "<ORIGINAL_RUN_ROOT>/material_profile_builder.py",
+      "role_prior_engine": "<ORIGINAL_RUN_ROOT>/role_prior_engine.py"
+    },
+    "scripts_dir": "<ORIGINAL_RUN_ROOT>"
+  },
+  "run_id": "JVASP-144808",
+  "schema_version": "cheap_context_first.pipeline_wrapper.v4_reference_neighbourhood_fingerprint",
+  "source": {
+    "external_id": null,
+    "external_json": null,
+    "jid": "JVASP-144808"
+  },
+  "status": "success",
+  "steps": [
+    {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 <ORIGINAL_RUN_ROOT>/material_profile_builder.py --jid JVASP-144808 --output_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile",
+      "finished_at_utc": "2026-08-09T13:44:35.053432+00:00",
+      "returncode": 0,
+      "started_at_utc": "2026-08-09T13:44:19.674677+00:00",
+      "status": "success",
+      "step": "material_profile_builder"
+    },
+    {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 <ORIGINAL_RUN_ROOT>/candidate_pool_builder.py --query_profile <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile/query_profile.json --output_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/pools --seed 87",
+      "finished_at_utc": "2026-08-09T13:44:53.373649+00:00",
+      "returncode": 0,
+      "started_at_utc": "2026-08-09T13:44:35.053613+00:00",
+      "status": "success",
+      "step": "candidate_pool_builder"
+    },
+    {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 <ORIGINAL_RUN_ROOT>/cheap_evidence_metrics.py --query_profile <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile/query_profile.json --pool_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/pools --output_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence",
+      "finished_at_utc": "2026-08-09T13:44:54.171556+00:00",
+      "returncode": 0,
+      "started_at_utc": "2026-08-09T13:44:53.373914+00:00",
+      "status": "success",
+      "step": "cheap_evidence_metrics"
+    },
+    {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 <ORIGINAL_RUN_ROOT>/role_prior_engine.py --query_profile <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/profile/query_profile.json --evidence_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/evidence --output_dir <ORIGINAL_RUN_ROOT>/batch_JVSAP_1/JVASP-144808/role_priors --legacy_outputs",
+      "finished_at_utc": "2026-08-09T13:44:54.389263+00:00",
+      "returncode": 0,
+      "started_at_utc": "2026-08-09T13:44:54.171764+00:00",
+      "status": "success",
+      "step": "role_prior_engine"
+    }
+  ]
+}

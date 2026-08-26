@@ -1,0 +1,17 @@
+{
+  "adjacent_family_size": 500,
+  "adjacent_min_element_overlap": 1,
+  "boundary_contrast_size": 500,
+  "enable_family_classifier": true,
+  "max_per_chemical_system_adjacent": 25,
+  "max_per_chemical_system_boundary": 25,
+  "max_per_chemical_system_negative": 10,
+  "max_per_chemical_system_same_family": 50,
+  "max_per_chemical_system_wildcard": 10,
+  "negative_control_size": 100,
+  "negative_max_element_overlap": 0,
+  "same_family_size": 500,
+  "seed": 87,
+  "stable_ehull_threshold": 0.1,
+  "wildcard_size": 100
+}

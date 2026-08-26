@@ -1,0 +1,81 @@
+{
+  "cluster_selection_diagnostics": [
+    {
+      "actual_clusters": 2,
+      "requested_clusters": 2,
+      "silhouette_score": 0.041646947800759726
+    }
+  ],
+  "configuration": {
+    "batch_output_root": "<ORIGINAL_RUN_ROOT>/batch_external_test",
+    "context_feature_weight": 0.15,
+    "distribution_weight": 0.3,
+    "fingerprint_name": "reference_neighbourhood_fingerprint.json",
+    "identity_weight": 0.55,
+    "include_low_reliability": false,
+    "include_negative_control": false,
+    "matrix_mode": "auto",
+    "max_clusters": 8,
+    "max_exact_candidates": 2500,
+    "max_full_matrix_candidates": 1000,
+    "min_profile_confidence": 0.5,
+    "min_retrieval_completeness": 0.5,
+    "n_clusters": null,
+    "output_dir": "<ORIGINAL_RUN_ROOT>/batch_external_test/candidate_context_analysis",
+    "profile_weight": 0.35,
+    "redundancy_min_component_similarity": 0.8,
+    "redundancy_similarity": 0.9,
+    "seed": 4881,
+    "structural_context_summary": "<ORIGINAL_RUN_ROOT>/batch_external_test/structural_context_batch_summary.csv",
+    "top_k": 5,
+    "transition_margin": 0.1
+  },
+  "counts": {
+    "clustering_candidates": 3,
+    "compatible_fingerprints": 3,
+    "input_candidates": 3,
+    "pairwise_comparisons": 3,
+    "redundancy_pairs": 0,
+    "review_candidates": 0,
+    "selected_clusters": 2
+  },
+  "created_at_utc": "2026-08-09T14:19:43.220468+00:00",
+  "inputs": {
+    "batch_output_root": "<ORIGINAL_RUN_ROOT>/batch_external_test",
+    "fingerprint_name": "reference_neighbourhood_fingerprint.json",
+    "source_id_column": "case_id",
+    "structural_context_summary": "<ORIGINAL_RUN_ROOT>/batch_external_test/structural_context_batch_summary.csv",
+    "supported_fingerprint_schema": "phase3.reference_neighbourhood_fingerprint.v1"
+  },
+  "matrix_outputs_written": true,
+  "outputs": [
+    "candidate_context_clusters_1c2.csv",
+    "candidate_context_coverage_1c2.json",
+    "candidate_context_dendrogram_1c2.png",
+    "candidate_context_map_1c2.png",
+    "candidate_context_report_1c2.md",
+    "candidate_context_review_table_1c2.csv",
+    "candidate_context_similarity_components.png",
+    "candidate_context_summary_1c2.csv",
+    "candidate_pairwise_context_similarity_1c2.csv",
+    "candidate_pairwise_explainability_1c2.csv",
+    "candidate_redundancy_groups_1c2.csv",
+    "candidate_redundancy_pairs_1c2.csv",
+    "chemistry_baseline_similarity_matrix_1c2.csv",
+    "cluster_context_explanations_1c2.csv",
+    "cluster_representatives_1c2.csv",
+    "cluster_summary_1c2.csv",
+    "combined_context_similarity_matrix_1c2.csv",
+    "contextually_distinct_candidates_1c2.csv",
+    "fingerprint_discovery_log.csv",
+    "fingerprint_inventory.csv",
+    "intercluster_candidates_1c2.csv",
+    "nearest_contextual_neighbours_1c2.csv",
+    "profile_neighbourhood_discordance.csv",
+    "profile_similarity_matrix_1c2.csv",
+    "profile_vs_reference_neighbourhood_similarity.png",
+    "reference_neighbourhood_similarity_matrix_1c2.csv"
+  ],
+  "schema_version": "candidate_context_analysis.phase1c2.reference_neighbourhood.v1",
+  "scope_note": "Reference-relative Candidate Context Analysis. Explainability outputs do not alter similarity or clustering. Outputs do not predict physical properties, intrinsic novelty, synthesis success, or candidate value."
+}

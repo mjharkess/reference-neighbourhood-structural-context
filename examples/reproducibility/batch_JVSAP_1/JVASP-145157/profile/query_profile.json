@@ -1,0 +1,480 @@
+{
+  "candidate_pool_inputs": {
+    "chemical_key": "Co-Li-Mn-O",
+    "composition_key": "oxide",
+    "family_key": "unknown",
+    "formula_family_key": "AB2C4D7",
+    "material_family_key": "oxide",
+    "prototype_key": "unknown",
+    "structure_variant_key": "unknown",
+    "symmetry_key": 8.0
+  },
+  "compatibility": {
+    "legacy_cheap_descriptors": {
+      "a_axis": 7.515185,
+      "atomic_radius_mean": 1.1999999999999997,
+      "b_axis": 7.515181,
+      "band_gap": 0.002,
+      "bond_length_mean": 2.8586613482958967,
+      "bond_length_range": 2.152597442793831,
+      "bond_length_std": 0.6081699161640405,
+      "bond_max_en_diff": 2.46,
+      "bond_mean_en_diff": 1.2768750000000002,
+      "bond_std_en_diff": 1.018056250817972,
+      "c_axis_cached": 11.522785,
+      "c_over_a": 1.5332669787902762,
+      "c_over_b": 1.5332677948807887,
+      "cart_z_span_over_c": 1.2623827733931354,
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "coord_max": 19.0,
+      "coord_mean": 16.583333333333332,
+      "coord_min": 14.0,
+      "coord_std": 1.6051133570215186,
+      "crystal_system_code": 2.0,
+      "density_feature": 4.423,
+      "electronegativity_range": 2.46,
+      "elements": [
+        "Co",
+        "Li",
+        "Mn",
+        "O"
+      ],
+      "energy_above_hull": 0.0451,
+      "exfoliation_energy_feature": null,
+      "family_classification_confidence": 0.35,
+      "formation_energy": -1.8976,
+      "formation_energy_peratom": -1.8976,
+      "formula_anonymous": null,
+      "formula_family": "AB2C4D7",
+      "frac_high_coord_sites": 1.0,
+      "frac_low_coord_sites": 0.0,
+      "frac_short_bonds": 0.25,
+      "frac_z_span": 0.9963137546182409,
+      "ionicity_proxy_comp": 2.46,
+      "is_centrosymmetric": 0.0,
+      "known_synthesized": null,
+      "material_family": "oxide",
+      "max_axis_over_min_axis": 1.5332677948807887,
+      "mean_electronegativity": 1.9625,
+      "metal_count": 3.0,
+      "n_elements": 4.0,
+      "n_symmetry_ops": 2.0,
+      "nonmetal_count": 1.0,
+      "prototype": null,
+      "prototype_family": "unknown",
+      "spacegroup_number": 8.0,
+      "spacegroup_symbol": "Cm",
+      "structure_variant": "unknown",
+      "valence_electrons_mean": 8.25,
+      "volume_per_atom": 8.247203422168411
+    },
+    "legacy_physical_inputs": {
+      "band_gap": 0.002,
+      "density_feature": 4.423,
+      "energy_above_hull": 0.0451,
+      "formation_energy": -1.8976,
+      "formation_energy_peratom": -1.8976,
+      "volume_per_atom": 8.247203422168411
+    }
+  },
+  "composition": {
+    "atomic_radius_mean": 1.1999999999999997,
+    "chemical_system": "Co-Li-Mn-O",
+    "composition_family": "oxide",
+    "electronegativity_range": 2.46,
+    "elements": [
+      "Co",
+      "Li",
+      "Mn",
+      "O"
+    ],
+    "mean_electronegativity": 1.9625,
+    "metal_count": 3.0,
+    "n_elements": 4.0,
+    "nonmetal_count": 1.0,
+    "valence_electrons_mean": 8.25
+  },
+  "descriptor_groups": {
+    "bonding": {
+      "bond_length_mean": 2.8586613482958967,
+      "bond_length_range": 2.152597442793831,
+      "bond_length_std": 0.6081699161640405,
+      "bond_max_en_diff": 2.46,
+      "bond_mean_en_diff": 1.2768750000000002,
+      "bond_std_en_diff": 1.018056250817972,
+      "frac_short_bonds": 0.25,
+      "ionicity_proxy_comp": 2.46
+    },
+    "composition": {
+      "atomic_radius_mean": 1.1999999999999997,
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "electronegativity_range": 2.46,
+      "elements": [
+        "Co",
+        "Li",
+        "Mn",
+        "O"
+      ],
+      "mean_electronegativity": 1.9625,
+      "metal_count": 3.0,
+      "n_elements": 4.0,
+      "nonmetal_count": 1.0,
+      "valence_electrons_mean": 8.25
+    },
+    "coordination": {
+      "coord_max": 19.0,
+      "coord_mean": 16.583333333333332,
+      "coord_min": 14.0,
+      "coord_std": 1.6051133570215186,
+      "frac_high_coord_sites": 1.0,
+      "frac_low_coord_sites": 0.0
+    },
+    "dimensional": {
+      "a_axis": 7.515185,
+      "b_axis": 7.515181,
+      "c_axis_cached": 11.522785,
+      "c_over_a": 1.5332669787902762,
+      "c_over_b": 1.5332677948807887,
+      "cart_z_span_over_c": 1.2623827733931354,
+      "frac_z_span": 0.9963137546182409,
+      "max_axis_over_min_axis": 1.5332677948807887
+    },
+    "family": {
+      "family_classification_confidence": 0.35,
+      "formula_family": "AB2C4D7",
+      "material_family": "oxide",
+      "prototype_family": "unknown",
+      "structure_variant": "unknown"
+    },
+    "physical_proxy": {
+      "band_gap": 0.002,
+      "density_feature": 4.423,
+      "energy_above_hull": 0.0451,
+      "formation_energy": -1.8976,
+      "formation_energy_peratom": -1.8976,
+      "volume_per_atom": 8.247203422168411
+    },
+    "symmetry": {
+      "crystal_system_code": 2.0,
+      "is_centrosymmetric": 0.0,
+      "n_symmetry_ops": 2.0,
+      "spacegroup_number": 8.0,
+      "spacegroup_symbol": "Cm"
+    }
+  },
+  "diagnostics": {
+    "feature_completeness": {
+      "all_lsf_features": {
+        "available_count": 37,
+        "available_fields": [
+          "band_gap",
+          "formation_energy",
+          "density_feature",
+          "spacegroup_number",
+          "crystal_system_code",
+          "n_symmetry_ops",
+          "is_centrosymmetric",
+          "coord_mean",
+          "coord_std",
+          "coord_min",
+          "coord_max",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "volume_per_atom",
+          "a_axis",
+          "b_axis",
+          "c_axis_cached",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "cart_z_span_over_c",
+          "bond_mean_en_diff",
+          "bond_std_en_diff",
+          "bond_max_en_diff",
+          "bond_length_mean",
+          "bond_length_std",
+          "bond_length_range",
+          "frac_short_bonds",
+          "ionicity_proxy_comp",
+          "mean_electronegativity",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "n_elements",
+          "metal_count",
+          "nonmetal_count"
+        ],
+        "completeness": 0.9736842105263158,
+        "missing_fields": [
+          "exfoliation_energy_feature"
+        ],
+        "total_count": 38
+      },
+      "cheap_descriptors": {
+        "available_count": 48,
+        "available_fields": [
+          "elements",
+          "n_elements",
+          "chemical_system",
+          "composition_family",
+          "metal_count",
+          "nonmetal_count",
+          "mean_electronegativity",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "formula_family",
+          "prototype_family",
+          "structure_variant",
+          "material_family",
+          "family_classification_confidence",
+          "spacegroup_number",
+          "spacegroup_symbol",
+          "crystal_system_code",
+          "n_symmetry_ops",
+          "is_centrosymmetric",
+          "formation_energy",
+          "formation_energy_peratom",
+          "energy_above_hull",
+          "band_gap",
+          "density_feature",
+          "volume_per_atom",
+          "a_axis",
+          "b_axis",
+          "c_axis_cached",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "cart_z_span_over_c",
+          "coord_mean",
+          "coord_std",
+          "coord_min",
+          "coord_max",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "bond_mean_en_diff",
+          "bond_std_en_diff",
+          "bond_max_en_diff",
+          "bond_length_mean",
+          "bond_length_std",
+          "bond_length_range",
+          "frac_short_bonds",
+          "ionicity_proxy_comp"
+        ],
+        "completeness": 0.9230769230769231,
+        "missing_fields": [
+          "formula_anonymous",
+          "prototype",
+          "known_synthesized",
+          "exfoliation_energy_feature"
+        ],
+        "total_count": 52
+      },
+      "default_screening_features": {
+        "available_count": 20,
+        "available_fields": [
+          "band_gap",
+          "formation_energy",
+          "density_feature",
+          "coord_mean",
+          "coord_std",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "spacegroup_number",
+          "volume_per_atom",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "ionicity_proxy_comp",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "n_elements",
+          "metal_count",
+          "nonmetal_count"
+        ],
+        "completeness": 1.0,
+        "missing_fields": [],
+        "total_count": 20
+      }
+    },
+    "missing_core_fields": [],
+    "missing_recommended_fields": [
+      "known_synthesized"
+    ],
+    "notes": [
+      "Phase 1 profile only: no retrieval, role-prior scoring, local-structure ranking, DFT, or property prediction has been run.",
+      "External materials are registered as query objects by default and are not added to the JARVIS anchor universe unless requested.",
+      "Null graph_context and role_priors fields are schema placeholders for later phases.",
+      "Family classification is cheap rule-based evidence, not crystallographic ground truth."
+    ]
+  },
+  "family_classification": {
+    "composition_family": "oxide",
+    "confidence": 0.35,
+    "evidence": [
+      "parsed_formula_counts={'Co': 1.0, 'Li': 7.0, 'Mn': 2.0, 'O': 4.0}",
+      "composition_family=oxide"
+    ],
+    "formula_family": "AB2C4D7",
+    "material_family": "oxide",
+    "prototype": null,
+    "prototype_family": "unknown",
+    "schema_version": "phase1.material_family_classifier.v1.3_pyrochlore",
+    "source_fields": {
+      "crystal_system_code": 2,
+      "existing_formula_anonymous": null,
+      "existing_material_family": "oxide",
+      "existing_prototype_family": null,
+      "formula": "Li7Mn2(CoO4)3",
+      "spacegroup_number": 8,
+      "spacegroup_symbol": "Cm"
+    },
+    "structure_variant": "unknown",
+    "warnings": [
+      "prototype_family_not_available"
+    ]
+  },
+  "graph_context": {
+    "betweenness_centrality": null,
+    "community_id": null,
+    "community_label": null,
+    "degree_centrality": null,
+    "distance_to_family_centroid": null,
+    "isolation_score": null,
+    "status": "not_computed_phase1"
+  },
+  "identity": {
+    "dataset_kind": "dft_3d",
+    "formula": "Li7Mn2Co3O12",
+    "is_external_material": false,
+    "jid": "JVASP-145157",
+    "material_type": "bulk",
+    "reduced_formula": "Li7Mn2(CoO4)3"
+  },
+  "metadata": {
+    "created_at_utc": "2026-08-09T13:42:50.827911+00:00",
+    "dft_run": false,
+    "local_structure_ranking_run": false,
+    "profile_scope": "cheap_material_context_only",
+    "profile_stage": "phase1",
+    "property_prediction_run": false,
+    "role_prior_scoring_run": false
+  },
+  "physical": {
+    "inputs": {
+      "band_gap": 0.002,
+      "density_feature": 4.423,
+      "energy_above_hull": 0.0451,
+      "formation_energy": -1.8976,
+      "formation_energy_peratom": -1.8976,
+      "volume_per_atom": 8.247203422168411
+    },
+    "plausibility": {
+      "data_completeness": 0.6666666666666666,
+      "energy_above_hull": 0.0451,
+      "evidence": [
+        "formation_energy=-1.8976",
+        "energy_above_hull=0.0451"
+      ],
+      "flags": [
+        "missing_known_synthesized_status",
+        "metastable_energy_above_hull"
+      ],
+      "formation_energy": -1.8976,
+      "jid": "JVASP-145157",
+      "known_synthesized": null,
+      "label": "metastable_or_uncertain",
+      "score": 0.75
+    }
+  },
+  "role_inputs": {
+    "boundary": {
+      "c_over_a": 1.5332669787902762,
+      "c_over_b": 1.5332677948807887,
+      "coord_std": 1.6051133570215186,
+      "crystal_system_code": 2.0,
+      "energy_above_hull": 0.0451,
+      "family_classification_confidence": 0.35,
+      "formula_family": "AB2C4D7",
+      "max_axis_over_min_axis": 1.5332677948807887,
+      "n_symmetry_ops": 2.0,
+      "prototype_family": "unknown",
+      "spacegroup_number": 8.0,
+      "spacegroup_symbol": "Cm",
+      "structure_variant": "unknown"
+    },
+    "bridge": {
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "electronegativity_range": 2.46,
+      "family_classification_confidence": 0.35,
+      "formula_family": "AB2C4D7",
+      "material_family": "oxide",
+      "n_elements": 4.0,
+      "prototype_family": "unknown",
+      "structure_variant": "unknown",
+      "volume_per_atom": 8.247203422168411
+    },
+    "hub": {
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "energy_above_hull": 0.0451,
+      "family_classification_confidence": 0.35,
+      "formula_family": "AB2C4D7",
+      "material_family": "oxide",
+      "prototype_family": "unknown",
+      "spacegroup_number": 8.0,
+      "structure_variant": "unknown"
+    },
+    "outlier": {
+      "chemical_system": "Co-Li-Mn-O",
+      "composition_family": "oxide",
+      "energy_above_hull": 0.0451,
+      "family_classification_confidence": 0.35,
+      "formula_family": "AB2C4D7",
+      "material_family": "oxide",
+      "n_elements": 4.0,
+      "prototype_family": "unknown",
+      "spacegroup_number": 8.0,
+      "structure_variant": "unknown"
+    }
+  },
+  "role_priors": {
+    "boundary": null,
+    "bridge": null,
+    "hub": null,
+    "outlier": null,
+    "status": "not_computed_phase1"
+  },
+  "schema_version": "phase1.material_profile.v1.2",
+  "source": {
+    "input_type": "jarvis_jid",
+    "jid": "JVASP-145157"
+  },
+  "structural_metadata": {
+    "crystal_system_code": 2.0,
+    "family_classification_confidence": 0.35,
+    "formula_family": "AB2C4D7",
+    "is_centrosymmetric": 0.0,
+    "material_family": "oxide",
+    "n_symmetry_ops": 2.0,
+    "prototype_family": "unknown",
+    "spacegroup_number": 8.0,
+    "spacegroup_symbol": "Cm",
+    "structure_variant": "unknown"
+  },
+  "validation": {
+    "expected_primary_role": null,
+    "expected_role_confidence": null,
+    "expected_secondary_roles": [],
+    "literature_basis": null,
+    "negative_control": false,
+    "validation_case": false
+  }
+}

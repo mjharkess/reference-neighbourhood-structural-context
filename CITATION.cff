@@ -1,0 +1,11 @@
+cff-version: 1.2.0 message: “If you use this software in research,
+please cite the specific version of the software used.” title:
+“Reference-Neighbourhood Structural Context Framework” type: software
+version: 0.1.0 authors: - family-names: “Harkess” given-names: “Michael”
+license: Apache-2.0 abstract: >- An experimental computational framework
+for representing and comparing materials through their relationship to a
+reference materials population. The framework constructs a
+Reference-Neighbourhood Fingerprint (RNF) for individual materials and
+uses Candidate Context Analysis (CCA) to examine contextual similarity,
+distinction, organisation, redundancy, clustering, and explainability
+across candidate cohorts.

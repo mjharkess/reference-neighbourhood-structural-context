@@ -1,0 +1,12 @@
+{
+  "can_run_retrieval": true,
+  "external_id": "EXT-JVASP-30-TEST",
+  "outputs": {
+    "external_descriptor_record": "<ORIGINAL_RUN_ROOT>/external_materials/EXT-JVASP-28634-TEST/external_descriptor_record.json",
+    "external_descriptor_report": "<ORIGINAL_RUN_ROOT>/external_materials/EXT-JVASP-28634-TEST/external_descriptor_report.json",
+    "external_material_profile": "<ORIGINAL_RUN_ROOT>/external_materials/EXT-JVASP-28634-TEST/external_material_profile.json",
+    "external_validation_report": "<ORIGINAL_RUN_ROOT>/external_materials/EXT-JVASP-28634-TEST/external_validation_report.json"
+  },
+  "parse_status": "success",
+  "validation_status": "accepted_with_warnings"
+}

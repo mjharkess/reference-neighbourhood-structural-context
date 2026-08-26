@@ -1,0 +1,462 @@
+{
+  "candidate_pool_inputs": {
+    "chemical_key": "Lu-Ni-Sn",
+    "composition_key": "metallic_or_intermetallic",
+    "family_key": "unknown",
+    "formula_family_key": "ABC4",
+    "material_family_key": "metallic_or_intermetallic",
+    "prototype_key": "unknown",
+    "structure_variant_key": "unknown",
+    "symmetry_key": 216.0
+  },
+  "compatibility": {
+    "legacy_cheap_descriptors": {
+      "a_axis": 4.947305346848307,
+      "atomic_radius_mean": 1.5166666666666666,
+      "b_axis": 4.947304466549198,
+      "band_gap": null,
+      "bond_length_mean": 2.7582939411322975,
+      "bond_length_range": 0.4296577089131737,
+      "bond_length_std": 0.20127707361512398,
+      "bond_max_en_diff": 0.6399999999999999,
+      "bond_mean_en_diff": 0.23000000000000004,
+      "bond_std_en_diff": 0.29063149634316415,
+      "c_axis_cached": 4.947304128800708,
+      "c_over_a": 0.9999997537957508,
+      "c_over_b": 0.9999999317308056,
+      "cart_z_span_over_c": 1.2497540457946281,
+      "chemical_system": "Lu-Ni-Sn",
+      "composition_family": "metallic_or_intermetallic",
+      "coord_max": 12.0,
+      "coord_mean": 12.0,
+      "coord_min": 12.0,
+      "coord_std": 0.0,
+      "crystal_system_code": 7.0,
+      "density_feature": null,
+      "electronegativity_range": 0.69,
+      "elements": [
+        "Lu",
+        "Ni",
+        "Sn"
+      ],
+      "energy_above_hull": null,
+      "exfoliation_energy_feature": null,
+      "family_classification_confidence": 0.35,
+      "formation_energy": null,
+      "formation_energy_peratom": null,
+      "formula_anonymous": null,
+      "formula_family": "ABC4",
+      "frac_high_coord_sites": 1.0,
+      "frac_low_coord_sites": 0.0,
+      "frac_short_bonds": 0.0,
+      "frac_z_span": 0.6248769596428019,
+      "ionicity_proxy_comp": 0.69,
+      "is_centrosymmetric": 0.0,
+      "known_synthesized": null,
+      "material_family": "metallic_or_intermetallic",
+      "max_axis_over_min_axis": 1.0000002462043098,
+      "mean_electronegativity": 1.7133333333333332,
+      "metal_count": 3.0,
+      "n_elements": 3.0,
+      "n_symmetry_ops": 24.0,
+      "nonmetal_count": 0.0,
+      "prototype": null,
+      "prototype_family": "unknown",
+      "spacegroup_number": 216.0,
+      "spacegroup_symbol": null,
+      "structure_variant": "unknown",
+      "valence_electrons_mean": 9.0,
+      "volume_per_atom": 14.270516396376394
+    },
+    "legacy_physical_inputs": {
+      "volume_per_atom": 14.270516396376394
+    }
+  },
+  "composition": {
+    "atomic_radius_mean": 1.5166666666666666,
+    "chemical_system": "Lu-Ni-Sn",
+    "composition_family": "metallic_or_intermetallic",
+    "electronegativity_range": 0.69,
+    "elements": [
+      "Lu",
+      "Ni",
+      "Sn"
+    ],
+    "mean_electronegativity": 1.7133333333333332,
+    "metal_count": 3.0,
+    "n_elements": 3.0,
+    "nonmetal_count": 0.0,
+    "valence_electrons_mean": 9.0
+  },
+  "descriptor_groups": {
+    "bonding": {
+      "bond_length_mean": 2.7582939411322975,
+      "bond_length_range": 0.4296577089131737,
+      "bond_length_std": 0.20127707361512398,
+      "bond_max_en_diff": 0.6399999999999999,
+      "bond_mean_en_diff": 0.23000000000000004,
+      "bond_std_en_diff": 0.29063149634316415,
+      "frac_short_bonds": 0.0,
+      "ionicity_proxy_comp": 0.69
+    },
+    "composition": {
+      "atomic_radius_mean": 1.5166666666666666,
+      "chemical_system": "Lu-Ni-Sn",
+      "composition_family": "metallic_or_intermetallic",
+      "electronegativity_range": 0.69,
+      "elements": [
+        "Lu",
+        "Ni",
+        "Sn"
+      ],
+      "mean_electronegativity": 1.7133333333333332,
+      "metal_count": 3.0,
+      "n_elements": 3.0,
+      "nonmetal_count": 0.0,
+      "valence_electrons_mean": 9.0
+    },
+    "coordination": {
+      "coord_max": 12.0,
+      "coord_mean": 12.0,
+      "coord_min": 12.0,
+      "coord_std": 0.0,
+      "frac_high_coord_sites": 1.0,
+      "frac_low_coord_sites": 0.0
+    },
+    "dimensional": {
+      "a_axis": 4.947305346848307,
+      "b_axis": 4.947304466549198,
+      "c_axis_cached": 4.947304128800708,
+      "c_over_a": 0.9999997537957508,
+      "c_over_b": 0.9999999317308056,
+      "cart_z_span_over_c": 1.2497540457946281,
+      "frac_z_span": 0.6248769596428019,
+      "max_axis_over_min_axis": 1.0000002462043098
+    },
+    "family": {
+      "family_classification_confidence": 0.35,
+      "formula_family": "ABC4",
+      "material_family": "metallic_or_intermetallic",
+      "prototype_family": "unknown",
+      "structure_variant": "unknown"
+    },
+    "physical_proxy": {
+      "volume_per_atom": 14.270516396376394
+    },
+    "symmetry": {
+      "crystal_system_code": 7.0,
+      "is_centrosymmetric": 0.0,
+      "n_symmetry_ops": 24.0,
+      "spacegroup_number": 216.0
+    }
+  },
+  "diagnostics": {
+    "feature_completeness": {
+      "all_lsf_features": {
+        "available_count": 34,
+        "available_fields": [
+          "spacegroup_number",
+          "crystal_system_code",
+          "n_symmetry_ops",
+          "is_centrosymmetric",
+          "coord_mean",
+          "coord_std",
+          "coord_min",
+          "coord_max",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "volume_per_atom",
+          "a_axis",
+          "b_axis",
+          "c_axis_cached",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "cart_z_span_over_c",
+          "bond_mean_en_diff",
+          "bond_std_en_diff",
+          "bond_max_en_diff",
+          "bond_length_mean",
+          "bond_length_std",
+          "bond_length_range",
+          "frac_short_bonds",
+          "ionicity_proxy_comp",
+          "mean_electronegativity",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "n_elements",
+          "metal_count",
+          "nonmetal_count"
+        ],
+        "completeness": 0.8947368421052632,
+        "missing_fields": [
+          "band_gap",
+          "formation_energy",
+          "density_feature",
+          "exfoliation_energy_feature"
+        ],
+        "total_count": 38
+      },
+      "cheap_descriptors": {
+        "available_count": 42,
+        "available_fields": [
+          "elements",
+          "n_elements",
+          "chemical_system",
+          "composition_family",
+          "metal_count",
+          "nonmetal_count",
+          "mean_electronegativity",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "formula_family",
+          "prototype_family",
+          "structure_variant",
+          "material_family",
+          "family_classification_confidence",
+          "spacegroup_number",
+          "crystal_system_code",
+          "n_symmetry_ops",
+          "is_centrosymmetric",
+          "volume_per_atom",
+          "a_axis",
+          "b_axis",
+          "c_axis_cached",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "cart_z_span_over_c",
+          "coord_mean",
+          "coord_std",
+          "coord_min",
+          "coord_max",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "bond_mean_en_diff",
+          "bond_std_en_diff",
+          "bond_max_en_diff",
+          "bond_length_mean",
+          "bond_length_std",
+          "bond_length_range",
+          "frac_short_bonds",
+          "ionicity_proxy_comp"
+        ],
+        "completeness": 0.8076923076923077,
+        "missing_fields": [
+          "formula_anonymous",
+          "prototype",
+          "spacegroup_symbol",
+          "formation_energy",
+          "formation_energy_peratom",
+          "energy_above_hull",
+          "known_synthesized",
+          "band_gap",
+          "density_feature",
+          "exfoliation_energy_feature"
+        ],
+        "total_count": 52
+      },
+      "default_screening_features": {
+        "available_count": 17,
+        "available_fields": [
+          "coord_mean",
+          "coord_std",
+          "frac_low_coord_sites",
+          "frac_high_coord_sites",
+          "spacegroup_number",
+          "volume_per_atom",
+          "c_over_a",
+          "c_over_b",
+          "max_axis_over_min_axis",
+          "frac_z_span",
+          "ionicity_proxy_comp",
+          "electronegativity_range",
+          "atomic_radius_mean",
+          "valence_electrons_mean",
+          "n_elements",
+          "metal_count",
+          "nonmetal_count"
+        ],
+        "completeness": 0.85,
+        "missing_fields": [
+          "band_gap",
+          "formation_energy",
+          "density_feature"
+        ],
+        "total_count": 20
+      }
+    },
+    "missing_core_fields": [],
+    "missing_recommended_fields": [
+      "energy_above_hull",
+      "formation_energy",
+      "known_synthesized"
+    ],
+    "notes": [
+      "Phase 1 profile only: no retrieval, role-prior scoring, local-structure ranking, DFT, or property prediction has been run.",
+      "External materials are registered as query objects by default and are not added to the JARVIS anchor universe unless requested.",
+      "Null graph_context and role_priors fields are schema placeholders for later phases.",
+      "Family classification is cheap rule-based evidence, not crystallographic ground truth."
+    ]
+  },
+  "family_classification": {
+    "composition_family": "metallic_or_intermetallic",
+    "confidence": 0.35,
+    "evidence": [
+      "parsed_formula_counts={'Lu': 1.0, 'Ni': 4.0, 'Sn': 1.0}",
+      "composition_family=metallic_or_intermetallic"
+    ],
+    "formula_family": "ABC4",
+    "material_family": "metallic_or_intermetallic",
+    "prototype": null,
+    "prototype_family": "unknown",
+    "schema_version": "phase1.material_family_classifier.v1.3_pyrochlore",
+    "source_fields": {
+      "crystal_system_code": 7,
+      "existing_formula_anonymous": null,
+      "existing_material_family": "metallic_or_intermetallic",
+      "existing_prototype_family": null,
+      "formula": "LuNi4Sn",
+      "spacegroup_number": 216,
+      "spacegroup_symbol": null
+    },
+    "structure_variant": "unknown",
+    "warnings": [
+      "prototype_family_not_available"
+    ]
+  },
+  "graph_context": {
+    "betweenness_centrality": null,
+    "community_id": null,
+    "community_label": null,
+    "degree_centrality": null,
+    "distance_to_family_centroid": null,
+    "isolation_score": null,
+    "status": "not_computed_phase1"
+  },
+  "identity": {
+    "dataset_kind": "external_structure",
+    "external_id": "EXT-JVASP-30-TEST",
+    "external_source_file": "<ORIGINAL_RUN_ROOT>/POSCAR_JVASP-86726",
+    "external_source_format": "poscar",
+    "formula": "LuNi4Sn",
+    "is_external_material": true,
+    "jid": "EXT-JVASP-86726-TEST",
+    "material_type": "external",
+    "reduced_formula": "LuNi4Sn"
+  },
+  "metadata": {
+    "created_at_utc": "2026-08-09T14:16:16.926011+00:00",
+    "dft_run": false,
+    "local_structure_ranking_run": false,
+    "profile_scope": "cheap_material_context_only",
+    "profile_stage": "phase1",
+    "property_prediction_run": false,
+    "role_prior_scoring_run": false
+  },
+  "physical": {
+    "inputs": {
+      "volume_per_atom": 14.270516396376394
+    },
+    "plausibility": {
+      "data_completeness": 0.0,
+      "energy_above_hull": null,
+      "evidence": [],
+      "flags": [
+        "missing_formation_energy",
+        "missing_energy_above_hull",
+        "missing_known_synthesized_status"
+      ],
+      "formation_energy": null,
+      "jid": "EXT-JVASP-86726-TEST",
+      "known_synthesized": null,
+      "label": "insufficient_data",
+      "score": 0.35
+    }
+  },
+  "role_inputs": {
+    "boundary": {
+      "c_over_a": 0.9999997537957508,
+      "c_over_b": 0.9999999317308056,
+      "coord_std": 0.0,
+      "crystal_system_code": 7.0,
+      "family_classification_confidence": 0.35,
+      "formula_family": "ABC4",
+      "max_axis_over_min_axis": 1.0000002462043098,
+      "n_symmetry_ops": 24.0,
+      "prototype_family": "unknown",
+      "spacegroup_number": 216.0,
+      "structure_variant": "unknown"
+    },
+    "bridge": {
+      "chemical_system": "Lu-Ni-Sn",
+      "composition_family": "metallic_or_intermetallic",
+      "electronegativity_range": 0.69,
+      "family_classification_confidence": 0.35,
+      "formula_family": "ABC4",
+      "material_family": "metallic_or_intermetallic",
+      "n_elements": 3.0,
+      "prototype_family": "unknown",
+      "structure_variant": "unknown",
+      "volume_per_atom": 14.270516396376394
+    },
+    "hub": {
+      "chemical_system": "Lu-Ni-Sn",
+      "composition_family": "metallic_or_intermetallic",
+      "family_classification_confidence": 0.35,
+      "formula_family": "ABC4",
+      "material_family": "metallic_or_intermetallic",
+      "prototype_family": "unknown",
+      "spacegroup_number": 216.0,
+      "structure_variant": "unknown"
+    },
+    "outlier": {
+      "chemical_system": "Lu-Ni-Sn",
+      "composition_family": "metallic_or_intermetallic",
+      "family_classification_confidence": 0.35,
+      "formula_family": "ABC4",
+      "material_family": "metallic_or_intermetallic",
+      "n_elements": 3.0,
+      "prototype_family": "unknown",
+      "spacegroup_number": 216.0,
+      "structure_variant": "unknown"
+    }
+  },
+  "role_priors": {
+    "boundary": null,
+    "bridge": null,
+    "hub": null,
+    "outlier": null,
+    "status": "not_computed_phase1"
+  },
+  "schema_version": "phase1.material_profile.v1.2",
+  "source": {
+    "external_id": "EXT-JVASP-86726-TEST",
+    "include_external_in_universe": false,
+    "input_path": "<ORIGINAL_RUN_ROOT>/external_materials/EXT-JVASP-86726-TEST/external_descriptor_record.json",
+    "input_type": "external_json"
+  },
+  "structural_metadata": {
+    "crystal_system_code": 7.0,
+    "family_classification_confidence": 0.35,
+    "formula_family": "ABC4",
+    "is_centrosymmetric": 0.0,
+    "material_family": "metallic_or_intermetallic",
+    "n_symmetry_ops": 24.0,
+    "prototype_family": "unknown",
+    "spacegroup_number": 216.0,
+    "structure_variant": "unknown"
+  },
+  "validation": {
+    "expected_primary_role": null,
+    "expected_role_confidence": null,
+    "expected_secondary_roles": [],
+    "literature_basis": null,
+    "negative_control": false,
+    "validation_case": false
+  }
+}
