@@ -1,3 +1,4 @@
+repository-code: "https://github.com/mjharkess/reference-neighbourhood-structural-context"
 cff-version: 1.2.0 message: “If you use this software in research,
 please cite the specific version of the software used.” title:
 “Reference-Neighbourhood Structural Context Framework” type: software
