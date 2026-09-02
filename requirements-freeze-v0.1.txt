@@ -25,7 +25,7 @@ packaging==26.0
 pacmap==0.9.1
 palettable==3.3.3
 pandas==3.0.2
-pillow==12.2.0
+pillow==12.3.0
 plotly==6.6.0
 pyarrow==23.0.1
 pymatgen==2026.3.23
