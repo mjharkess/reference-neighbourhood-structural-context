@@ -309,6 +309,7 @@ The four hypotheses do not have the same evidence status.
 | **H3 — Comparative Utility** | Preliminary support; further validation required |
 | **H4 — Incremental Information** | Not established |
 
+
 The project should therefore not simply be described as “validated”.
 
 The current evidence supports a narrower statement: the framework can generate reproducible reference-neighbourhood representations under the tested conditions, those representations show interpretable differences in selected tests, and they can be used to organise candidate cohorts.
@@ -430,6 +431,42 @@ If the later conventional-descriptor comparison supports H4, that result can be 
 If it does not support H4, that result is equally informative.
 
 The value of the v0.1 release does not depend on demonstrating that the framework is superior. Its purpose is to make the method sufficiently clear, reproducible, and testable that the central hypotheses can be evaluated without changing the rules after seeing the result.
+
+## **18. Relationship to Existing Methods**
+
+RN-SCF sits within a broader family of methods that describe, compare, or organise materials relative to existing materials populations. Reference-relative analysis is therefore not itself a new concept. Previous work has used structural fingerprints, similarity measures, prototype matching, materials-space maps, local density and novelty measures, and graph or community representations to locate materials relative to known structures.
+
+Early materials-space approaches such as **Materials Cartography** demonstrated that structural and electronic fingerprints can be used to represent materials in a common space, identify similarities, and explore relationships within large materials databases. Tools such as **AFLOW-XtalFinder** similarly provide database-relative structural comparison and prototype identification. Descriptor frameworks including **SOAP/DScribe** and related structural representations provide established ways of converting atomic structures or local environments into numerical representations suitable for similarity analysis and machine learning.
+
+More recent work has moved closer to explicitly reference-relative interpretations. **Falkowski and Sparks (2025)** proposed mutual-information-informed novelty estimation along chemical and structural axes, using the local distribution of known materials to assess candidate novelty. **Widdowson and Kurlin (2025)** developed materials-space maps and a local novelty distance based on proximity to known structures. These approaches demonstrate that the position of a candidate relative to an existing materials population can itself provide useful information.
+
+A particularly relevant recent approach is **Nguyen et al. (2026), Computed materials proposals depart from the structural memory of experimental discovery**. That work embeds experimentally reported crystal structures in a structural-similarity space, constructs graph communities, and examines how historical and computationally proposed materials relate to previously occupied regions of that space. It therefore provides an important precedent for using structural relationships to an existing reference population as a form of context for evaluating proposed materials.
+
+RN-SCF builds on this general methodological landscape rather than replacing it. Many of its individual ingredients are established techniques. These include inexpensive material descriptors, structural and compositional similarity, database retrieval, structural-family and prototype information, neighbourhood statistics, clustering, diversity measures, and identification of representative or unusual candidates.
+
+The specific focus of RN-SCF is different. Rather than treating the reference population primarily as a space in which a material receives a position, nearest-neighbour distance, novelty score, prototype assignment, or community membership, RN-SCF explicitly constructs a **query-centred reference neighbourhood** containing several deliberately different forms of evidence. In the current implementation these include:
+
+- **same-family references**, intended to provide closely related structural and compositional context;
+
+- **adjacent-family references**, intended to provide related but broader context;
+
+- **boundary/contrast references**, intended to expose informative differences rather than simply maximise similarity;
+
+- **wildcard references**, providing a deterministic broader sample outside the principal pools; and
+
+- **negative-control references**, providing deliberately less-related context against which the more relevant neighbourhood can be interpreted.
+
+The resulting neighbourhood is not discarded after retrieval. Its composition, provenance, overlaps, distributions, and other contextual characteristics are retained in a **Reference-Neighbourhood Fingerprint (RNF)**. The RNF is therefore intended to represent aspects of the *reference neighbourhood around the material*, rather than to act solely as another intrinsic description of the material itself.
+
+RN-SCF then introduces a second level of analysis through **Candidate Context Analysis (CCA)**. CCA compares RNFs across a candidate cohort to examine whether materials occupy similar or different reference contexts, whether groups emerge, and which candidates appear representative, unusual, or potentially redundant within that contextual representation. This creates a two-stage architecture:
+
+**material → structured reference neighbourhood → RNF → comparison of RNFs across candidates**
+
+This architecture is the principal methodological distinction claimed for RN-SCF at the present stage. It should not be interpreted as a claim that the underlying descriptors, similarity measures, retrieval concepts, clustering methods, or the broader idea of reference-relative materials analysis are individually novel.
+
+An important unresolved question is whether this construction provides information that could not be obtained more simply from conventional material descriptors or existing structural representations. This is addressed explicitly by **H4 (Incremental Information)**. At the current stage, RN-SCF has not established that an RNF contains unique information, improves candidate selection, or outperforms conventional descriptor-based approaches. A conventional-descriptor baseline comparison is therefore required before stronger claims about incremental scientific utility can be made.
+
+RN-SCF should consequently be viewed as an experimental organisation of established and recent reference-relative ideas around an explicitly constructed, inspectable neighbourhood representation. Its potential contribution lies in whether the deliberate combination of heterogeneous reference evidence, retained neighbourhood provenance, RNF representation, and cohort-level CCA proves useful beyond what can already be achieved with simpler or established representations. That question remains empirical rather than assumed.
 
 ## **18. Summary**
 
