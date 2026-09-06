@@ -161,7 +161,7 @@ def coordination_stats(structure: Any, cutoff: float = 3.0) -> Dict[str, Optiona
         }
 
 
-def bonding_proxies(structure: Any, cutoff: float = 3.0) -> Dict[str, Optional[float]]:
+def bonding_proxies(structure: Any, cutoff: float = 4.0) -> Dict[str, Optional[float]]:
     try:
         from pymatgen.core import Element  # type: ignore
         distances: List[float] = []
@@ -183,14 +183,23 @@ def bonding_proxies(structure: Any, cutoff: float = 3.0) -> Dict[str, Optional[f
                         pass
         d_arr = np.array(distances, dtype=float) if distances else np.array([], dtype=float)
         en_arr = np.array(en_diffs, dtype=float) if en_diffs else np.array([], dtype=float)
-        if not d_arr.size:
-            raise ValueError("no neighbour distances found")
         try:
             unique_elements = sorted({str(site.specie.symbol) for site in structure})
             ens = [float(Element(e).X) for e in unique_elements if Element(e).X is not None]
             ionicity = float(max(ens) - min(ens)) if ens else None
         except Exception:
             ionicity = None
+        if not d_arr.size:
+            return {
+                "bond_mean_en_diff": None,
+                "bond_std_en_diff": None,
+                "bond_max_en_diff": None,
+                "bond_length_mean": None,
+                "bond_length_std": None,
+                "bond_length_range": None,
+                "frac_short_bonds": None,
+                "ionicity_proxy_comp": ionicity,
+            }
         return {
             "bond_mean_en_diff": float(en_arr.mean()) if en_arr.size else None,
             "bond_std_en_diff": float(en_arr.std()) if en_arr.size else None,
@@ -279,7 +288,7 @@ def build_external_descriptors(
                 })
 
             descriptors.update(coordination_stats(structure, cutoff=coordination_cutoff))
-            descriptors.update(bonding_proxies(structure, cutoff=coordination_cutoff))
+            descriptors.update(bonding_proxies(structure, cutoff=4.0))
         except Exception as exc:
             errors.append(f"Descriptor construction failed: {exc}")
 
